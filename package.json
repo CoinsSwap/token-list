@@ -1,0 +1,32 @@
+{
+  "name": "@coinsswap/token-list",
+  "version": "0.1.0",
+  "description": "> The default token list for CoinsSwap.",
+  "main": "build/commonjs/token.js",
+  "module": "build/module/token.js",
+  "scripts": {
+    "c": "rollup -c",
+    "ct": "rollup -c tokens.rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoinsSwap/token-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoinsSwap/token-list/issues"
+  },
+  "homepage": "https://github.com/CoinsSwap/token-list#readme",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "rollup": "^2.36.1"
+  },
+  "dependencies": {
+    "cryptocurrency-icons": "^0.17.1",
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
