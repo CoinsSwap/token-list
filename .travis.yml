@@ -28,5 +28,4 @@ deploy:
   file: build/**/*
   cleanup: true
   on:
-    all_branches: true
     tags: true
