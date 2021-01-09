@@ -1,3 +1,8 @@
+[![Build Status](https://img.shields.io/travis/com/coinsswap/token-list/main.svg?style=for-the-badge)](https://travis-ci.com/CoinsSwap/token-list)
+[![npm](https://img.shields.io/npm/dt/@coinsswap/token-list.svg?style=for-the-badge)](https://www.npmjs.com/package/@coinsswap/token-list)
+[![David](https://img.shields.io/david/coinsswap/token-list.svg?style=for-the-badge)](https://github.com/coinsswap/token-list)
+[![npm](https://img.shields.io/npm/v/@coinsswap/token-list.svg?style=for-the-badge)](https://www.npmjs.com/package/@coinsswap/token-list)
+
 # token-list
 > The default token list for CoinsSwap.
 
