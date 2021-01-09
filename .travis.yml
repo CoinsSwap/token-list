@@ -19,7 +19,7 @@ after_failure:
 
 branches:
   only:
-  - master
+  - main
 
 deploy:
   provider: releases
