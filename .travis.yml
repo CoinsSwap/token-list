@@ -12,6 +12,7 @@ script:
   - npm run service
   - npm run ct
   - npm run test
+  - npm run zip
 
 after_success:
   - node deploy.js success $WEBHOOK_URL
@@ -23,7 +24,7 @@ deploy:
   provider: releases
   token: $GITHUB_TOKEN
   file_glob: true
-  file: build/**/*
+  file: build/coinsswap-token-list.zip
   cleanup: false
   on:
     tags: true

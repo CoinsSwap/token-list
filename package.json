@@ -9,6 +9,7 @@
     "ct": "rollup -c tokens.rollup.config.js",
     "build": "npm run c && npm run ct",
     "service": "node service",
+    "zip": "rm -rf build/*.zip && node zip.js",
     "test": "node test.js"
   },
   "repository": {
@@ -24,7 +25,8 @@
   "homepage": "https://github.com/CoinsSwap/token-list#readme",
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
-    "rollup": "^2.36.1"
+    "rollup": "^2.36.1",
+    "zip-dir": "^2.0.0"
   },
   "dependencies": {
     "cp-file": "^9.0.0",
