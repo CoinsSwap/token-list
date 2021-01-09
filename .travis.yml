@@ -23,7 +23,6 @@ after_failure:
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
-  file_glob: true
   file: build/coinsswap-token-list.zip
   cleanup: false
   on:
