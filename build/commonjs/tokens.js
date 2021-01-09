@@ -7,9 +7,9 @@ var tokens = [
 		name: "Dai Stablecoin",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/dai.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/dai.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/dai.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/dai.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/dai.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/dai.svg"
 		}
 	},
 	{
@@ -18,9 +18,9 @@ var tokens = [
 		name: "Augur Reputation",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/rep.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/rep.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/rep.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/rep.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/rep.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/rep.svg"
 		}
 	},
 	{
@@ -29,9 +29,9 @@ var tokens = [
 		name: "Ether",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/eth.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/eth.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/eth.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/eth.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/eth.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/eth.svg"
 		}
 	},
 	{
@@ -40,9 +40,9 @@ var tokens = [
 		name: "Wrapped Ether",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -51,9 +51,9 @@ var tokens = [
 		name: "0x Protocol Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/zrx.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/zrx.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/zrx.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/zrx.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/zrx.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/zrx.svg"
 		}
 	},
 	{
@@ -62,9 +62,9 @@ var tokens = [
 		name: "USD Coin",
 		decimals: 6,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/usdc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/usdc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/usdc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/usdc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/usdc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/usdc.svg"
 		}
 	},
 	{
@@ -73,9 +73,9 @@ var tokens = [
 		name: "Basic Attention Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/bat.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/bat.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/bat.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/bat.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/bat.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/bat.svg"
 		}
 	},
 	{
@@ -84,9 +84,9 @@ var tokens = [
 		name: "Maker",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/mkr.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/mkr.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/mkr.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/mkr.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/mkr.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/mkr.svg"
 		}
 	},
 	{
@@ -95,9 +95,9 @@ var tokens = [
 		name: "Wrapped BTC",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/wbtc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/wbtc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/wbtc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/wbtc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/wbtc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/wbtc.svg"
 		}
 	},
 	{
@@ -106,9 +106,9 @@ var tokens = [
 		name: "Synthetix Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -117,9 +117,9 @@ var tokens = [
 		name: "sUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -128,9 +128,9 @@ var tokens = [
 		name: "Kyber Network Crystal",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/knc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/knc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/knc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/knc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/knc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/knc.svg"
 		}
 	},
 	{
@@ -139,9 +139,9 @@ var tokens = [
 		name: "Bancor Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/bnt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/bnt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/bnt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/bnt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/bnt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/bnt.svg"
 		}
 	},
 	{
@@ -150,9 +150,9 @@ var tokens = [
 		name: "Gnosis Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/gno.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/gno.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/gno.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/gno.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/gno.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/gno.svg"
 		}
 	},
 	{
@@ -161,9 +161,9 @@ var tokens = [
 		name: "Chainlink Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/link.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/link.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/link.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/link.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/link.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/link.svg"
 		}
 	},
 	{
@@ -172,9 +172,9 @@ var tokens = [
 		name: "Republic Protocol",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/ren.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/ren.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/ren.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/ren.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/ren.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/ren.svg"
 		}
 	},
 	{
@@ -183,9 +183,9 @@ var tokens = [
 		name: "Golem Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/gnt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/gnt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/gnt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/gnt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/gnt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/gnt.svg"
 		}
 	},
 	{
@@ -194,9 +194,9 @@ var tokens = [
 		name: "OmiseGO",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/omg.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/omg.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/omg.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/omg.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/omg.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/omg.svg"
 		}
 	},
 	{
@@ -205,9 +205,9 @@ var tokens = [
 		name: "Aragon Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/ant.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/ant.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/ant.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/ant.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/ant.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/ant.svg"
 		}
 	},
 	{
@@ -216,9 +216,9 @@ var tokens = [
 		name: "Sai Stablecoin v1.0",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/sai.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/sai.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/sai.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/sai.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/sai.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/sai.svg"
 		}
 	},
 	{
@@ -227,9 +227,9 @@ var tokens = [
 		name: "Civil Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -238,9 +238,9 @@ var tokens = [
 		name: "Dether",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/dth.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/dth.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/dth.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/dth.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/dth.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/dth.svg"
 		}
 	},
 	{
@@ -249,9 +249,9 @@ var tokens = [
 		name: "FOAM",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -260,9 +260,9 @@ var tokens = [
 		name: "AirSwap Token",
 		decimals: 4,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/ast.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/ast.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/ast.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/ast.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/ast.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/ast.svg"
 		}
 	},
 	{
@@ -271,9 +271,9 @@ var tokens = [
 		name: "Aion Network",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/aion.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/aion.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/aion.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/aion.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/aion.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/aion.svg"
 		}
 	},
 	{
@@ -282,9 +282,9 @@ var tokens = [
 		name: "DAOstack",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -293,9 +293,9 @@ var tokens = [
 		name: "Storj",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/storj.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/storj.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/storj.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/storj.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/storj.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/storj.svg"
 		}
 	},
 	{
@@ -304,9 +304,9 @@ var tokens = [
 		name: "Decentraland",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/mana.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/mana.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/mana.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/mana.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/mana.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/mana.svg"
 		}
 	},
 	{
@@ -315,9 +315,9 @@ var tokens = [
 		name: "Hut34 Entropy Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/entrp.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/entrp.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/entrp.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/entrp.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/entrp.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/entrp.svg"
 		}
 	},
 	{
@@ -326,9 +326,9 @@ var tokens = [
 		name: "Melon",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/mln.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/mln.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/mln.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/mln.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/mln.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/mln.svg"
 		}
 	},
 	{
@@ -337,9 +337,9 @@ var tokens = [
 		name: "Loom Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/loom.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/loom.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/loom.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/loom.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/loom.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/loom.svg"
 		}
 	},
 	{
@@ -348,9 +348,9 @@ var tokens = [
 		name: "Celer Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -359,9 +359,9 @@ var tokens = [
 		name: "iExec RLC Token",
 		decimals: 9,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/rlc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/rlc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/rlc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/rlc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/rlc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/rlc.svg"
 		}
 	},
 	{
@@ -370,9 +370,9 @@ var tokens = [
 		name: "ICONOMI",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/icn.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/icn.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/icn.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/icn.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/icn.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/icn.svg"
 		}
 	},
 	{
@@ -381,9 +381,9 @@ var tokens = [
 		name: "Digix",
 		decimals: 9,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/dgd.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/dgd.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/dgd.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/dgd.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/dgd.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/dgd.svg"
 		}
 	},
 	{
@@ -392,9 +392,9 @@ var tokens = [
 		name: "Zilliqa",
 		decimals: 12,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/zil.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/zil.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/zil.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/zil.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/zil.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/zil.svg"
 		}
 	},
 	{
@@ -403,9 +403,9 @@ var tokens = [
 		name: "Compound Basic Attention Token",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -414,9 +414,9 @@ var tokens = [
 		name: "Compound Dai",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -425,9 +425,9 @@ var tokens = [
 		name: "Compound Sai (Legacy Dai)",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -436,9 +436,9 @@ var tokens = [
 		name: "Compound Ether",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -447,9 +447,9 @@ var tokens = [
 		name: "Compound Augur",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -458,9 +458,9 @@ var tokens = [
 		name: "Compound USD Coin",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -469,9 +469,9 @@ var tokens = [
 		name: "Compound 0x",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -480,9 +480,9 @@ var tokens = [
 		name: "0xBitcoin Token",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/0xbtc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/0xbtc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/0xbtc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/0xbtc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/0xbtc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/0xbtc.svg"
 		}
 	},
 	{
@@ -491,9 +491,9 @@ var tokens = [
 		name: "Status Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/snt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/snt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/snt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/snt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/snt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/snt.svg"
 		}
 	},
 	{
@@ -502,9 +502,9 @@ var tokens = [
 		name: "SPANK",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/spank.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/spank.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/spank.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/spank.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/spank.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/spank.svg"
 		}
 	},
 	{
@@ -513,9 +513,9 @@ var tokens = [
 		name: "BOOTY",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/booty.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/booty.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/booty.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/booty.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/booty.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/booty.svg"
 		}
 	},
 	{
@@ -524,9 +524,9 @@ var tokens = [
 		name: "UniBright",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -535,9 +535,9 @@ var tokens = [
 		name: "ICON",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/icx.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/icx.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/icx.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/icx.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/icx.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/icx.svg"
 		}
 	},
 	{
@@ -546,9 +546,9 @@ var tokens = [
 		name: "Numeraire",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/nmr.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/nmr.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/nmr.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/nmr.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/nmr.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/nmr.svg"
 		}
 	},
 	{
@@ -557,9 +557,9 @@ var tokens = [
 		name: "Gemini Dollar",
 		decimals: 2,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/gusd.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/gusd.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/gusd.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/gusd.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/gusd.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/gusd.svg"
 		}
 	},
 	{
@@ -568,9 +568,9 @@ var tokens = [
 		name: "FunFair",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/fun.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/fun.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/fun.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/fun.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/fun.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/fun.svg"
 		}
 	},
 	{
@@ -579,9 +579,9 @@ var tokens = [
 		name: "PAX Stablecoin",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/pax.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/pax.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/pax.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/pax.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/pax.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/pax.svg"
 		}
 	},
 	{
@@ -590,9 +590,9 @@ var tokens = [
 		name: "TrueUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/tusd.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/tusd.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/tusd.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/tusd.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/tusd.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/tusd.svg"
 		}
 	},
 	{
@@ -601,9 +601,9 @@ var tokens = [
 		name: "Livepeer",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/lpt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/lpt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/lpt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/lpt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/lpt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/lpt.svg"
 		}
 	},
 	{
@@ -612,9 +612,9 @@ var tokens = [
 		name: "EnjinCoin",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/enj.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/enj.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/enj.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/enj.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/enj.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/enj.svg"
 		}
 	},
 	{
@@ -623,9 +623,9 @@ var tokens = [
 		name: "PowerLedger",
 		decimals: 6,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/powr.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/powr.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/powr.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/powr.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/powr.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/powr.svg"
 		}
 	},
 	{
@@ -634,9 +634,9 @@ var tokens = [
 		name: "Request",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/req.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/req.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/req.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/req.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/req.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/req.svg"
 		}
 	},
 	{
@@ -645,9 +645,9 @@ var tokens = [
 		name: "district0x",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/dnt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/dnt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/dnt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/dnt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/dnt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/dnt.svg"
 		}
 	},
 	{
@@ -656,9 +656,9 @@ var tokens = [
 		name: "Matic Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/matic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/matic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/matic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/matic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/matic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/matic.svg"
 		}
 	},
 	{
@@ -667,9 +667,9 @@ var tokens = [
 		name: "Loopring",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/lrc.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/lrc.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/lrc.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/lrc.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/lrc.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/lrc.svg"
 		}
 	},
 	{
@@ -678,9 +678,9 @@ var tokens = [
 		name: "Raiden Network Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/rdn.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/rdn.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/rdn.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/rdn.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/rdn.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/rdn.svg"
 		}
 	},
 	{
@@ -689,9 +689,9 @@ var tokens = [
 		name: "Tether USD",
 		decimals: 6,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/usdt.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/usdt.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/usdt.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/usdt.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/usdt.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/usdt.svg"
 		}
 	},
 	{
@@ -700,9 +700,9 @@ var tokens = [
 		name: "Gas Token 2",
 		decimals: 2,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -711,9 +711,9 @@ var tokens = [
 		name: "Compound",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/comp.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/comp.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/comp.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/comp.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/comp.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/comp.svg"
 		}
 	},
 	{
@@ -722,9 +722,9 @@ var tokens = [
 		name: "Universal Market Access",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/uma.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/uma.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/uma.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/uma.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/uma.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/uma.svg"
 		}
 	},
 	{
@@ -733,9 +733,9 @@ var tokens = [
 		name: "bZx Protocol Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -744,9 +744,9 @@ var tokens = [
 		name: "renBTC",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -755,9 +755,9 @@ var tokens = [
 		name: "Balancer",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/bal.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/bal.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/bal.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/bal.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/bal.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/bal.svg"
 		}
 	},
 	{
@@ -766,9 +766,9 @@ var tokens = [
 		name: "Aave",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/lend.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/lend.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/lend.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/lend.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/lend.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/lend.svg"
 		}
 	},
 	{
@@ -777,9 +777,9 @@ var tokens = [
 		name: "Aave",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -788,9 +788,9 @@ var tokens = [
 		name: "yearn.finance",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/yfi.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/yfi.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/yfi.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/yfi.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/yfi.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/yfi.svg"
 		}
 	},
 	{
@@ -799,9 +799,9 @@ var tokens = [
 		name: "Ampleforth",
 		decimals: 9,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/ampl.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/ampl.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/ampl.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/ampl.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/ampl.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/ampl.svg"
 		}
 	},
 	{
@@ -810,9 +810,9 @@ var tokens = [
 		name: "Keep",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -821,9 +821,9 @@ var tokens = [
 		name: "mStable USD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -832,9 +832,9 @@ var tokens = [
 		name: "Binance USD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -843,9 +843,9 @@ var tokens = [
 		name: "Curve DAO Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -854,9 +854,9 @@ var tokens = [
 		name: "Sushi",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -865,9 +865,9 @@ var tokens = [
 		name: "Swerve.fi swUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -876,9 +876,9 @@ var tokens = [
 		name: "Swerve DAO Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -887,9 +887,9 @@ var tokens = [
 		name: "Synth sBTC",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -898,9 +898,9 @@ var tokens = [
 		name: "Uniswap Protocol Governance Token",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/uni.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/uni.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/uni.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/uni.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/uni.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/uni.svg"
 		}
 	},
 	{
@@ -909,9 +909,9 @@ var tokens = [
 		name: "yearn Curve.fi yDAI/yUSDC/yUSDT/yTUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -920,9 +920,9 @@ var tokens = [
 		name: "yearn Curve.fi yDAI/yUSDC/yUSDT/yBUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -931,9 +931,9 @@ var tokens = [
 		name: "yearn USDC",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -942,9 +942,9 @@ var tokens = [
 		name: "yearn DAI",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -953,9 +953,9 @@ var tokens = [
 		name: "yearn USDT",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -964,9 +964,9 @@ var tokens = [
 		name: "yearn TUSD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -975,9 +975,9 @@ var tokens = [
 		name: "Akropolis",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -986,9 +986,9 @@ var tokens = [
 		name: "Audius",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -997,9 +997,9 @@ var tokens = [
 		name: "Band Protocol",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/band.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/band.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/band.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/band.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/band.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/band.svg"
 		}
 	},
 	{
@@ -1008,9 +1008,9 @@ var tokens = [
 		name: "Based Money",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1019,9 +1019,9 @@ var tokens = [
 		name: "Binance USD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1030,9 +1030,9 @@ var tokens = [
 		name: "Cream",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1041,9 +1041,9 @@ var tokens = [
 		name: "Donut",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1052,9 +1052,9 @@ var tokens = [
 		name: "Meta",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1063,9 +1063,9 @@ var tokens = [
 		name: "mStable USD",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1074,9 +1074,9 @@ var tokens = [
 		name: "PAX Gold",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1085,9 +1085,9 @@ var tokens = [
 		name: "Pickle Finance",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1096,9 +1096,9 @@ var tokens = [
 		name: "renZEC",
 		decimals: 8,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{
@@ -1107,9 +1107,9 @@ var tokens = [
 		name: "Augur",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/rep.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/rep.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/rep.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/rep.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/rep.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/rep.svg"
 		}
 	},
 	{
@@ -1118,9 +1118,9 @@ var tokens = [
 		name: "sETH",
 		decimals: 18,
 		icons: {
-			black: "./node_modules/cryptocurrency-icons/svg/black/generic.svg",
-			white: "./node_modules/cryptocurrency-icons/svg/white/generic.svg",
-			color: "./node_modules/cryptocurrency-icons/svg/color/generic.svg"
+			black: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/black/generic.svg",
+			white: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/white/generic.svg",
+			color: "https://raw.githubusercontent.com/coinsswap/token-list/master/icons/color/generic.svg"
 		}
 	},
 	{

@@ -3,11 +3,12 @@
   "version": "1.0.3",
   "description": "> The default token list for CoinsSwap.",
   "main": "build/commonjs/token.js",
-  "module": "build/module/token.js",
+  "module": "build/module/token.mjs",
   "scripts": {
     "c": "rollup -c",
     "ct": "rollup -c tokens.rollup.config.js",
     "build": "npm run c && npm run ct",
+    "service": "node service",
     "test": "node test.js"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "rollup": "^2.36.1"
   },
   "dependencies": {
+    "cp-file": "^9.0.0",
     "cryptocurrency-icons": "^0.17.1",
     "node-fetch": "^2.6.1"
   }

@@ -3,9 +3,19 @@ import { promisify } from 'util'
 import icons from 'cryptocurrency-icons/manifest.json'
 import fetch from 'node-fetch'
 import avatars from './avatars'
+import cp from 'cp-file'
 
 const read = promisify(readFile)
 const write = promisify(writeFile);
+
+const writeIcons = async (symbol, icons) => {
+  symbol = symbol.toLowerCase()
+  for(let icon of Object.keys(icons)) {
+    if (!icons[icon].includes('https')) {
+      await cp(icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './build/icons'))
+    }
+  }
+}
 
 const iconMap = new Map()
 
@@ -21,7 +31,8 @@ export default (async () => {
   let tokens = await fetch(url)
   tokens = await tokens.json()
   tokens = tokens.records
-  tokens = tokens.filter(token => {
+
+  for (const token of tokens) {
     if (iconMap.has(token.symbol.toLowerCase())) {
       const icons = iconMap.get(token.symbol.toLowerCase())
       token.icons = icons
@@ -30,9 +41,17 @@ export default (async () => {
     } else {
       token.icons = iconMap.get('generic')
     }
-    return token
-  })
-
-  await write('./build/tokens.json', JSON.stringify(tokens, null, 2))
+    await writeIcons(token.symbol, token.icons)
+    const csUrl ='https://raw.githubusercontent.com/coinsswap/token-list/master/build/icons'
+    const icons = {}
+    for (var key of Object.keys(token.icons)) {
+      icons[key] = token.icons[key].replace('./node_modules/cryptocurrency-icons/svg', csUrl)
+      // console.log(icons[key]);
+    }
+    // console.log(token.icons);
+    token.icons = icons
+    // console.log(token.icons);
+  }
+  await write('./build/tokens.json', JSON.stringify(tokens, null, 1))
 
 })()

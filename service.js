@@ -4,11 +4,13 @@ var fs = require('fs');
 var util = require('util');
 var icons = require('cryptocurrency-icons/manifest.json');
 var fetch = require('node-fetch');
+var cp = require('cp-file');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var icons__default = /*#__PURE__*/_interopDefaultLegacy(icons);
 var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
+var cp__default = /*#__PURE__*/_interopDefaultLegacy(cp);
 
 var avatars = {
   '1inch': 'https://avatars3.githubusercontent.com/u/43341157?s=200&v=4',
@@ -18,6 +20,16 @@ var avatars = {
 
 const read = util.promisify(fs.readFile);
 const write = util.promisify(fs.writeFile);
+
+const writeIcons = async (symbol, icons) => {
+  symbol = symbol.toLowerCase();
+  for(let icon of Object.keys(icons)) {
+    if (!icons[icon].includes('https')) {
+      await cp__default['default'](icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './icons'));
+    }
+
+  }
+};
 
 const iconMap = new Map();
 
@@ -33,7 +45,8 @@ var service = (async () => {
   let tokens = await fetch__default['default'](url);
   tokens = await tokens.json();
   tokens = tokens.records;
-  tokens = tokens.filter(token => {
+
+  for (const token of tokens) {
     if (iconMap.has(token.symbol.toLowerCase())) {
       const icons = iconMap.get(token.symbol.toLowerCase());
       token.icons = icons;
@@ -42,10 +55,18 @@ var service = (async () => {
     } else {
       token.icons = iconMap.get('generic');
     }
-    return token
-  });
-
-  await write('./build/tokens.json', JSON.stringify(tokens, null, 2));
+    await writeIcons(token.symbol, token.icons);
+    const csUrl ='https://raw.githubusercontent.com/coinsswap/token-list/master/icons';
+    const icons = {};
+    for (var key of Object.keys(token.icons)) {
+      icons[key] = token.icons[key].replace('./node_modules/cryptocurrency-icons/svg', csUrl);
+      // console.log(icons[key]);
+    }
+    // console.log(token.icons);
+    token.icons = icons;
+    // console.log(token.icons);
+  }
+  await write('./build/tokens.json', JSON.stringify(tokens, null, 1));
 
 })();
 
