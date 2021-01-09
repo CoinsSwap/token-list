@@ -22,6 +22,6 @@ deploy:
   token: $GITHUB_TOKEN
   file_glob: true
   file: build/**/*
-  cleanup: true
+  cleanup: false
   on:
     tags: true
