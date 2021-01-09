@@ -17,10 +17,6 @@ after_success:
 after_failure:
   - node deploy.js failure $WEBHOOK_URL
 
-branches:
-  only:
-  - main
-
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
