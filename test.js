@@ -3,9 +3,9 @@ const list = require('./build/commonjs/tokens.js');
 for (const token of list) {
   if (!token.icons) process.exit(1)
   for (const icon of Object.keys(token.icons)) {
-    if (icons[icon].includes('https')) {
-      console.error(`${icons[icon]} isn't an url`);
-      process.exit(`${icons[icon]} isn't an url`)
+    if (!token.icons[icon].includes('https')) {
+      console.error(`${token.icons[icon]} isn't an url`);
+      process.exit(`${token.icons[icon]} isn't an url`)
     }
   }
 }

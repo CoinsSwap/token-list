@@ -25,9 +25,8 @@ const writeIcons = async (symbol, icons) => {
   symbol = symbol.toLowerCase();
   for(let icon of Object.keys(icons)) {
     if (!icons[icon].includes('https')) {
-      await cp__default['default'](icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './icons'));
+      await cp__default['default'](icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './build/icons'));
     }
-
   }
 };
 
@@ -56,7 +55,7 @@ var service = (async () => {
       token.icons = iconMap.get('generic');
     }
     await writeIcons(token.symbol, token.icons);
-    const csUrl ='https://raw.githubusercontent.com/coinsswap/token-list/master/icons';
+    const csUrl ='https://raw.githubusercontent.com/coinsswap/token-list/master/build/icons';
     const icons = {};
     for (var key of Object.keys(token.icons)) {
       icons[key] = token.icons[key].replace('./node_modules/cryptocurrency-icons/svg', csUrl);
