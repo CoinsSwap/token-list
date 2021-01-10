@@ -40,7 +40,7 @@ for (const {symbol} of icons__default['default']) {
   iconMap.set(icon, { black, white, color });
 }
 var service = (async () => {
-  const url = `https://api.0x.org/swap/v1/tokens`;
+  const url = `https://kovan.api.0x.org/swap/v1/tokens`;
   let tokens = await fetch__default['default'](url);
   tokens = await tokens.json();
   tokens = tokens.records;

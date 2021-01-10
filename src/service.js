@@ -27,7 +27,7 @@ for (const {symbol} of icons) {
   iconMap.set(icon, { black, white, color })
 }
 export default (async () => {
-  const url = `https://api.0x.org/swap/v1/tokens`
+  const url = `https://kovan.api.0x.org/swap/v1/tokens`
   let tokens = await fetch(url)
   tokens = await tokens.json()
   tokens = tokens.records
