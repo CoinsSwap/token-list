@@ -13,10 +13,17 @@ export default class TokenList {
     return this.getList()
   }
 
-  async getList(name, network) {
+  async getList(name, network, prefix) {
     if (!name) name = this.name
     if (!network) network = this.network
-    const importee = await import(`./build/tokens/${network}/${name}.json`)
+
+    if (globalThis.window) {
+      prefix = prefix || 'https://raw.githubusercontent.com/CoinsSwap/token-list/main/build/tokens'
+      const response = await fetch(`${prefix}/${network}/${name}.json`)
+      return response.json()
+    }
+    prefix = prefix || './build/tokens'
+    const importee = await import(`${prefix}/${network}/${name}.json`)
     return importee.default
   }
 }

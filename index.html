@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="module">
+      (async () => {
+        const importee = await import("./token-list.mjs")
+        const TokenList = importee.default
+
+        console.log(await new TokenList())
+      })()
+    </script>
+  </body>
+</html>
