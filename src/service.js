@@ -12,7 +12,6 @@ const read = promisify(readFile)
 const write = promisify(writeFile);
 
 const writeIcons = async (symbol, icon) => {
-  console.log(symbol, icon);
   const icons = {
     black: `./node_modules/cryptocurrency-icons/svg/black/${icon}`,
     white: `./node_modules/cryptocurrency-icons/svg/white/${icon}`,
@@ -29,7 +28,6 @@ const writeIcons = async (symbol, icon) => {
 const iconMap = new Map()
 
 for (const {symbol} of icons) {
-  console.log(symbol);
   const icon = symbol.toLowerCase()
   iconMap.set(symbol, `${icon}.svg`)
 }
@@ -111,7 +109,5 @@ export default (async () => {
       await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
     }
   }
-
-
   await write('./build/manifest.json', JSON.stringify(manifest, null, 1))
 })()
