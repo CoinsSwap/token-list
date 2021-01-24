@@ -1,12 +1,22 @@
 import json from '@rollup/plugin-json'
 
 export default [{
-  input: 'build/tokens.json',
+  input: ['build/tokens/mainnet/0x.json', 'build/tokens/mainnet/uniswap.json'],
   output: [{
-    file: 'build/module/tokens.mjs',
+    dir: 'build/module/mainnet',
     format: 'es'
   }, {
-    file: 'build/commonjs/tokens.js',
+    dir: 'build/commonjs/mainnet',
+    format: 'cjs'
+  }],
+  plugins: [ json() ]
+}, {
+  input: ['build/tokens/kovan/0x.json', 'build/tokens/kovan/uniswap.json'],
+  output: [{
+    dir: 'build/module/kovan',
+    format: 'es'
+  }, {
+    dir: 'build/commonjs/kovan',
     format: 'cjs'
   }],
   plugins: [ json() ]

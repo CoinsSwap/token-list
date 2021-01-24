@@ -1,9 +1,9 @@
 {
   "name": "@coinsswap/token-list",
   "version": "1.2.3",
-  "description": "> The default token list for CoinsSwap.",
-  "main": "build/commonjs/token.js",
-  "module": "build/module/token.mjs",
+  "description": "The default token list for CoinsSwap.",
+  "main": "token-list.js",
+  "module": "token-list.mjs",
   "scripts": {
     "c": "rollup -c",
     "ct": "rollup -c tokens.rollup.config.js",
