@@ -4,27 +4,31 @@
   "name": "Wrapped Ether",
   "address": "0xd0A1E359811322d97991E03f863a0C30C2cF029C",
   "icon": "generic.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
  },
  "DAI": {
   "symbol": "DAI",
   "name": "Dai Stablecoin",
   "address": "0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa",
   "icon": "dai.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#fcf0d4"
  },
  "MKR": {
   "symbol": "MKR",
   "name": "Maker",
   "address": "0xAaF64BFCC32d0F15873a02163e7E500671a4ffcD",
   "icon": "mkr.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#bae6e2"
  },
  "UNI": {
   "symbol": "UNI",
   "name": "Uniswap",
   "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
   "icon": "uni.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#fc057c"
  }
 }

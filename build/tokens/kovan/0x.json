@@ -4,104 +4,119 @@
   "name": "Dai Stablecoin",
   "address": "0x4f96fe3b7a6cf9725f59d353f723c1bdb64ca6aa",
   "icon": "dai.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#fcf0d4"
  },
  "REP": {
   "symbol": "REP",
   "name": "Augur Reputation",
   "address": "0x4e5cb5a0caca30d1ad27d8cd8200a907854fb518",
   "icon": "rep.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#dfd3d9"
  },
  "ETH": {
   "symbol": "ETH",
   "name": "Ether",
   "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
   "icon": "eth.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#c8d1f6"
  },
  "WETH": {
   "symbol": "WETH",
   "name": "Wrapped Ether",
   "address": "0xd0a1e359811322d97991e03f863a0c30c2cf029c",
   "icon": "generic.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
  },
  "ZRX": {
   "symbol": "ZRX",
   "name": "0x Protocol Token",
   "address": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
   "icon": "zrx.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#352e2e"
  },
  "USDC": {
   "symbol": "USDC",
   "name": "USD Coin",
   "address": "0x75b0622cec14130172eae9cf166b92e5c112faff",
   "icon": "usdc.svg",
-  "decimals": 6
+  "decimals": 6,
+  "dominantColor": "#2675cc"
  },
  "BAT": {
   "symbol": "BAT",
   "name": "Basic Attention Token",
   "address": "0x9f8cfb61d3b2af62864408dd703f9c3beb55dff7",
   "icon": "bat.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#fc5304"
  },
  "MKR": {
   "symbol": "MKR",
   "name": "Maker",
   "address": "0xaaf64bfcc32d0f15873a02163e7e500671a4ffcd",
   "icon": "mkr.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#bae6e2"
  },
  "WBTC": {
   "symbol": "WBTC",
   "name": "Wrapped BTC",
   "address": "0xa0a5ad2296b38bd3e3eb59aaeaf1589e8d9a29a9",
   "icon": "wbtc.svg",
-  "decimals": 8
+  "decimals": 8,
+  "dominantColor": "#b8b5bb"
  },
  "KNC": {
   "symbol": "KNC",
   "name": "Kyber Network Crystal",
   "address": "0xad67cb4d63c9da94aca37fdf2761aadf780ff4a2",
   "icon": "knc.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#f8fcfc"
  },
  "SAI": {
   "symbol": "SAI",
   "name": "Sai Stablecoin v1.0",
   "address": "0xc4375b7de8af5a38a93548eb8453a498222c4ff2",
   "icon": "sai.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#b48c04"
  },
  "cREP": {
   "symbol": "cREP",
   "name": "Compound Augur",
   "address": "0xfd874be7e6733bdc6dca9c7cdd97c225ec235d39",
   "icon": "generic.svg",
-  "decimals": 8
+  "decimals": 8,
+  "dominantColor": "#ecbc14"
  },
  "cZRX": {
   "symbol": "cZRX",
   "name": "Compound 0x",
   "address": "0xc014dc10a57ac78350c5fddb26bb66f1cb0960a0",
   "icon": "generic.svg",
-  "decimals": 8
+  "decimals": 8,
+  "dominantColor": "#ecbc14"
  },
  "ZWETH": {
   "symbol": "ZWETH",
   "name": "Custom Kovan Wrapped Ether",
   "address": "0x1FcAf05ABa8c7062D6F08E25c77Bf3746fCe5433",
   "icon": "generic.svg",
-  "decimals": 18
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
  },
  "ZUSDC": {
   "symbol": "ZUSDC",
   "name": "Custom Kovan USD Coin",
   "address": "0x5a719Cf3E02c17c876F6d294aDb5CB7C6eB47e2F",
   "icon": "generic.svg",
-  "decimals": 6
+  "decimals": 6,
+  "dominantColor": "#ecbc14"
  }
 }

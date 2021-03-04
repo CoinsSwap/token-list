@@ -6,6 +6,7 @@ var icons = require('cryptocurrency-icons/manifest.json');
 var fetch = require('node-fetch');
 var cp = require('cp-file');
 var ora = require('ora');
+var ColorThief = require('color-thief-updated');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -13,11 +14,16 @@ var icons__default = /*#__PURE__*/_interopDefaultLegacy(icons);
 var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
 var cp__default = /*#__PURE__*/_interopDefaultLegacy(cp);
 var ora__default = /*#__PURE__*/_interopDefaultLegacy(ora);
+var ColorThief__default = /*#__PURE__*/_interopDefaultLegacy(ColorThief);
 
 const spinner = ora__default['default']().start();
 
 const read = util.promisify(fs.readFile);
 const write = util.promisify(fs.writeFile);
+
+const rgbToHex = ([r,g,b]) => {
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+};
 
 const writeIcons = async (symbol, icon) => {
   const icons = {
@@ -112,7 +118,10 @@ var service = (async () => {
         }
         await writeIcons(symbol, icon);
 
-        result[symbol] = { symbol, name, address, icon, decimals };
+        const thief = new ColorThief__default['default']();
+        const dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));
+
+        result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
       }
       await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
     }

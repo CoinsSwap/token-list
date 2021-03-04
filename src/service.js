@@ -5,11 +5,16 @@ import fetch from 'node-fetch'
 import avatars from './avatars'
 import cp from 'cp-file'
 import ora from 'ora'
+import ColorThief from 'color-thief-updated'
 
 const spinner = ora().start()
 
 const read = promisify(readFile)
 const write = promisify(writeFile);
+
+const rgbToHex = ([r,g,b]) => {
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+}
 
 const writeIcons = async (symbol, icon) => {
   const icons = {
@@ -104,7 +109,10 @@ export default (async () => {
         }
         await writeIcons(symbol, icon)
 
-        result[symbol] = { symbol, name, address, icon, decimals }
+        const thief = new ColorThief()
+        const dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`))
+
+        result[symbol] = { symbol, name, address, icon, decimals, dominantColor }
       }
       await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
     }
