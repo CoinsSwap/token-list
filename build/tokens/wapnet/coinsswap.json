@@ -2,7 +2,7 @@
  "WETH": {
   "symbol": "WETH",
   "name": "Wrapped Ether",
-  "address": "0x0276b00A3da95DBf45d177E0Ceb5251e9c1ECf11",
+  "address": "0xA94365C1b9abAC2aBE959953155421A7C8fD3b12",
   "icon": "generic.svg",
   "decimals": 18,
   "dominantColor": "#ecbc14"
@@ -10,7 +10,7 @@
  "ZRX": {
   "symbol": "ZRX",
   "name": "0x Protocol Token",
-  "address": "0x3ea3a770995Dc2439433fD994A58469868f6934c",
+  "address": "0x0F48E776274fd3060b2D2998f9048dcAC43a1179",
   "icon": "zrx.svg",
   "decimals": 18,
   "dominantColor": "#352e2e"

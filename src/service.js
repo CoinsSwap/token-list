@@ -6,6 +6,7 @@ import avatars from './avatars'
 import cp from 'cp-file'
 import ora from 'ora'
 import ColorThief from 'color-thief-updated'
+import contractAddresses from '@coinsswap/contract-address'
 
 const spinner = ora().start()
 
@@ -61,12 +62,12 @@ const getWapnetTokens = async network => {
     {
      symbol: 'WETH',
      name: 'Wrapped Ether',
-     address: '0x0276b00A3da95DBf45d177E0Ceb5251e9c1ECf11',
+     address: contractAddresses[7475].weth,
      decimals: 18
    }, {
     symbol: 'ZRX',
     name: '0x Protocol Token',
-    address: '0x3ea3a770995Dc2439433fD994A58469868f6934c',
+    address: contractAddresses[7475].zrx.zrxToken,
     decimals: 18
    }
   ]

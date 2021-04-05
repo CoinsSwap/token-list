@@ -9,6 +9,7 @@ var fetch = require('node-fetch');
 var cp = require('cp-file');
 var ora = require('ora');
 var ColorThief = require('color-thief-updated');
+var contractAddresses = require('@coinsswap/contract-address');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -17,6 +18,7 @@ var fetch__default = /*#__PURE__*/_interopDefaultLegacy(fetch);
 var cp__default = /*#__PURE__*/_interopDefaultLegacy(cp);
 var ora__default = /*#__PURE__*/_interopDefaultLegacy(ora);
 var ColorThief__default = /*#__PURE__*/_interopDefaultLegacy(ColorThief);
+var contractAddresses__default = /*#__PURE__*/_interopDefaultLegacy(contractAddresses);
 
 const spinner = ora__default['default']().start();
 
@@ -72,12 +74,12 @@ const getWapnetTokens = async network => {
     {
      symbol: 'WETH',
      name: 'Wrapped Ether',
-     address: '0x0276b00A3da95DBf45d177E0Ceb5251e9c1ECf11',
+     address: contractAddresses__default['default'][7475].weth,
      decimals: 18
    }, {
     symbol: 'ZRX',
     name: '0x Protocol Token',
-    address: '0x3ea3a770995Dc2439433fD994A58469868f6934c',
+    address: contractAddresses__default['default'][7475].zrx.zrxToken,
     decimals: 18
    }
   ]
@@ -140,13 +142,10 @@ var service = (async () => {
     for (const dex of dexes) {
       const result = {};
       if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
-
-        console.log(network, dex);
         for (const token of tokens[network][dex]) {
           manifest[network][dex].push(token.symbol);
 
           let { symbol, name, address, icon, decimals } = token;
-          console.log(token);
           if (iconMap.has(symbol)) {
             icon = iconMap.get(symbol);
           } else {
