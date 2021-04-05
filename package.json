@@ -1,6 +1,6 @@
 {
   "name": "@coinsswap/token-list",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "The default token list for CoinsSwap.",
   "main": "token-list.js",
   "module": "token-list.mjs",
