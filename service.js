@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 var fs = require('fs');
 var util = require('util');
 var icons = require('cryptocurrency-icons/manifest.json');
@@ -20,6 +22,9 @@ const spinner = ora__default['default']().start();
 
 const read = util.promisify(fs.readFile);
 const write = util.promisify(fs.writeFile);
+
+const dexes = ['0x', 'uniswap', 'coinsswap'];
+const networks = ['mainnet', 'kovan', 'wapnet'];
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
@@ -61,7 +66,26 @@ const getUniswapTokens = async network => {
   const response = await fetch__default['default'](`https://raw.githubusercontent.com/Uniswap/default-token-list/master/src/tokens/${network}.json`);
     return response.json()
 };
+
+const getWapnetTokens = async network => {
+  return [
+    {
+     symbol: 'WETH',
+     name: 'Wrapped Ether',
+     address: '0x0276b00A3da95DBf45d177E0Ceb5251e9c1ECf11',
+     decimals: 18
+   }, {
+    symbol: 'ZRX',
+    name: '0x Protocol Token',
+    address: '0x3ea3a770995Dc2439433fD994A58469868f6934c',
+    decimals: 18
+   }
+  ]
+};
+
+
 const getDexTokens = async (exchange, network) => {
+  if (exchange === 'coinsswap') return getWapnetTokens()
   if (exchange === '0x') return get0xTokens(network)
   if (exchange === 'uniswap') {
     const tokens = await getUniswapTokens(network);
@@ -72,8 +96,7 @@ const getDexTokens = async (exchange, network) => {
 const getTokens = async () => {
   const mainnet = {};
   const kovan = {};
-
-  const dexes = ['0x', 'uniswap'];
+  const wapnet = {};
 
   for (const dex of dexes) {
     spinner.text = `fetching tokens from ${dex} for mainnet`;
@@ -89,8 +112,19 @@ const getTokens = async () => {
     kovan[dex] = tokens;
 
     spinner.succeed(`fetching tokens from ${dex} for kovan`);
+
+    if (dex === 'coinsswap') {
+      spinner.text = `fetching tokens from ${dex} for wapnet`;
+      if (!spinner.isSpinning) spinner.start();
+
+      tokens = await getDexTokens(dex, 'wapnet');
+      wapnet[dex] = tokens;
+
+      spinner.succeed(`fetching tokens from ${dex} for wapnet`);
+    }
+
   }
-  return {mainnet, kovan}
+  return {mainnet, kovan, wapnet}
 };
 
 var service = (async () => {
@@ -98,35 +132,40 @@ var service = (async () => {
 
   const manifest = {
     mainnet: {uniswap: [], '0x': []},
-    kovan: {uniswap: [], '0x': []}
+    kovan: {uniswap: [], '0x': []},
+    wapnet: { coinsswap: [] }
   };
-
-  const networks = ['mainnet', 'kovan'];
-  const dexes = ['0x', 'uniswap'];
 
   for (const network of networks) {
     for (const dex of dexes) {
       const result = {};
-      for (const token of tokens[network][dex]) {
-        manifest[network][dex].push(token.symbol);
+      if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
 
-        let { symbol, name, address, icon, decimals } = token;
-        if (iconMap.has(symbol)) {
-          icon = iconMap.get(symbol);
-        } else {
-          icon = iconMap.get('GENERIC');
+        console.log(network, dex);
+        for (const token of tokens[network][dex]) {
+          manifest[network][dex].push(token.symbol);
+
+          let { symbol, name, address, icon, decimals } = token;
+          console.log(token);
+          if (iconMap.has(symbol)) {
+            icon = iconMap.get(symbol);
+          } else {
+            icon = iconMap.get('GENERIC');
+          }
+          await writeIcons(symbol, icon);
+
+          const thief = new ColorThief__default['default']();
+          const dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));
+
+          result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
         }
-        await writeIcons(symbol, icon);
-
-        const thief = new ColorThief__default['default']();
-        const dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));
-
-        result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
+        await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
       }
-      await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
     }
   }
   await write('./build/manifest.json', JSON.stringify(manifest, null, 1));
 })();
 
-module.exports = service;
+exports.default = service;
+exports.dexes = dexes;
+exports.networks = networks;

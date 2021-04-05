@@ -170,5 +170,11 @@
    "ZWETH",
    "ZUSDC"
   ]
+ },
+ "wapnet": {
+  "coinsswap": [
+   "WETH",
+   "ZRX"
+  ]
  }
 }

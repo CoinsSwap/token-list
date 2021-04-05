@@ -1,0 +1,18 @@
+{
+ "WETH": {
+  "symbol": "WETH",
+  "name": "Wrapped Ether",
+  "address": "0x0276b00A3da95DBf45d177E0Ceb5251e9c1ECf11",
+  "icon": "generic.svg",
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
+ },
+ "ZRX": {
+  "symbol": "ZRX",
+  "name": "0x Protocol Token",
+  "address": "0x3ea3a770995Dc2439433fD994A58469868f6934c",
+  "icon": "zrx.svg",
+  "decimals": 18,
+  "dominantColor": "#352e2e"
+ }
+}
