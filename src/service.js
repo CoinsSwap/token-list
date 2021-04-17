@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'fs'
+import { writeFile } from 'fs'
 import { promisify } from 'util'
 import icons from 'cryptocurrency-icons/manifest.json'
 import fetch from 'node-fetch'
@@ -10,7 +10,6 @@ import contractAddresses from '@coinsswap/contract-address'
 
 const spinner = ora().start()
 
-const read = promisify(readFile)
 const write = promisify(writeFile);
 
 export const dexes = ['0x', 'uniswap', 'coinsswap']

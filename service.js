@@ -22,7 +22,6 @@ var contractAddresses__default = /*#__PURE__*/_interopDefaultLegacy(contractAddr
 
 const spinner = ora__default['default']().start();
 
-const read = util.promisify(fs.readFile);
 const write = util.promisify(fs.writeFile);
 
 const dexes = ['0x', 'uniswap', 'coinsswap'];
