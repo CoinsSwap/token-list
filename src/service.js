@@ -69,9 +69,16 @@ const getWapnetTokens = async network => {
     name: '0x Protocol Token',
     address: contractAddresses[7475].zrx.zrxToken,
     decimals: 18
-   }
-  ]
+  }, {
+    symbol: 'CSS',
+    name: 'CoinSSwap Token',
+    address: contractAddresses[7475].cssToken,
+    decimals: 18
+  }]
 }
+
+
+// const getCoins
 
 
 const getDexTokens = async (exchange, network) => {

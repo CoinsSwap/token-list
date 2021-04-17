@@ -14,5 +14,12 @@
   "icon": "zrx.svg",
   "decimals": 18,
   "dominantColor": "#352e2e"
+ },
+ "CSS": {
+  "symbol": "CSS",
+  "name": "CoinSSwap Token",
+  "icon": "generic.svg",
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
  }
 }
