@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var fs = require('fs');
 var util = require('util');
 var icons = require('cryptocurrency-icons/manifest.json');
@@ -23,9 +21,6 @@ var contractAddresses__default = /*#__PURE__*/_interopDefaultLegacy(contractAddr
 const spinner = ora__default['default']().start();
 
 const write = util.promisify(fs.writeFile);
-
-const dexes = ['0x', 'uniswap', 'coinsswap'];
-const networks = ['mainnet', 'kovan', 'ropsten', 'wapnet'];
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
@@ -152,6 +147,4 @@ var service = (async () => {
   await write('./build/manifest.json', JSON.stringify(manifest, null, 1));
 })();
 
-exports.default = service;
-exports.dexes = dexes;
-exports.networks = networks;
+module.exports = service;

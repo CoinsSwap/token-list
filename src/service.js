@@ -12,9 +12,6 @@ const spinner = ora().start()
 
 const write = promisify(writeFile);
 
-export const dexes = ['0x', 'uniswap', 'coinsswap']
-export const networks = ['mainnet', 'kovan', 'ropsten', 'wapnet']
-
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
 }
