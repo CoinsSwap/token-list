@@ -171,6 +171,13 @@
    "ZUSDC"
   ]
  },
+ "ropsten": {
+  "uniswap": [
+   "WETH",
+   "DAI",
+   "UNI"
+  ]
+ },
  "wapnet": {
   "coinsswap": [
    "WETH",

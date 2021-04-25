@@ -13,7 +13,7 @@ const spinner = ora().start()
 const write = promisify(writeFile);
 
 export const dexes = ['0x', 'uniswap', 'coinsswap']
-export const networks = ['mainnet', 'kovan', 'wapnet']
+export const networks = ['mainnet', 'kovan', 'ropsten', 'wapnet']
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
@@ -89,51 +89,32 @@ const getDexTokens = async (exchange, network) => {
   }
 }
 
-const getTokens = async () => {
-  const mainnet = {}
-  const kovan = {}
-  const wapnet = {}
+const getTokens = async manifest => {
+  const tokens = {}
 
-  for (const dex of dexes) {
-    spinner.text = `fetching tokens from ${dex} for mainnet`
-    if (!spinner.isSpinning) spinner.start()
-    let tokens = await getDexTokens(dex, 'mainnet')
-    mainnet[dex] = tokens
-
-    spinner.succeed(`fetching tokens from ${dex} for mainnet`)
-
-    spinner.text = `fetching tokens from ${dex} for kovan`
-    if (!spinner.isSpinning) spinner.start()
-    tokens = await getDexTokens(dex, 'kovan')
-    kovan[dex] = tokens
-
-    spinner.succeed(`fetching tokens from ${dex} for kovan`)
-
-    if (dex === 'coinsswap') {
-      spinner.text = `fetching tokens from ${dex} for wapnet`
+  for (const network of Object.keys(manifest)) {
+    tokens[network] = {}
+    for (const dex of Object.keys(manifest[network])) {
+      spinner.text = `fetching tokens from ${dex} for ${network}`
       if (!spinner.isSpinning) spinner.start()
-
-      tokens = await getDexTokens(dex, 'wapnet')
-      wapnet[dex] = tokens
-
-      spinner.succeed(`fetching tokens from ${dex} for wapnet`)
+      tokens[network][dex] = await getDexTokens(dex, network)
+      spinner.succeed(`fetching tokens from ${dex} for ${network}`)
     }
-
   }
-  return {mainnet, kovan, wapnet}
+  return tokens
 }
 
 export default (async () => {
-  const tokens = await getTokens()
-
   const manifest = {
     mainnet: {uniswap: [], '0x': []},
     kovan: {uniswap: [], '0x': []},
+    ropsten: {uniswap: []},
     wapnet: { coinsswap: [] }
   }
+  const tokens = await getTokens(manifest)
 
-  for (const network of networks) {
-    for (const dex of dexes) {
+  for (const network of Object.keys(manifest)) {
+    for (const dex of Object.keys(manifest[network])) {
       const result = {}
       if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
         for (const token of tokens[network][dex]) {

@@ -1,0 +1,26 @@
+{
+ "WETH": {
+  "symbol": "WETH",
+  "name": "Wrapped Ether",
+  "address": "0xc778417E063141139Fce010982780140Aa0cD5Ab",
+  "icon": "generic.svg",
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
+ },
+ "DAI": {
+  "symbol": "DAI",
+  "name": "Dai Stablecoin",
+  "address": "0xaD6D458402F60fD3Bd25163575031ACDce07538D",
+  "icon": "dai.svg",
+  "decimals": 18,
+  "dominantColor": "#fcf0d4"
+ },
+ "UNI": {
+  "symbol": "UNI",
+  "name": "Uniswap",
+  "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+  "icon": "uni.svg",
+  "decimals": 18,
+  "dominantColor": "#fc057c"
+ }
+}
