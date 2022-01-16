@@ -302,5 +302,29 @@
   "icon": "mln.svg",
   "decimals": 18,
   "dominantColor": "#0e162e"
+ },
+ "ENS": {
+  "symbol": "ENS",
+  "name": "Ethereum Name Service",
+  "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+  "icon": "generic.svg",
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
+ },
+ "sUSD": {
+  "symbol": "sUSD",
+  "name": "Synth sUSD",
+  "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+  "icon": "generic.svg",
+  "decimals": 18,
+  "dominantColor": "#ecbc14"
+ },
+ "MATIC": {
+  "symbol": "MATIC",
+  "name": "Polygon",
+  "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+  "icon": "matic.svg",
+  "decimals": 18,
+  "dominantColor": "#2c6cec"
  }
 }

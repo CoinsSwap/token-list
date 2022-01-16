@@ -48,6 +48,11 @@ const get0xTokens = async network => {
   return tokens
 }
 
+const getPancakeswapTokens = async network => {
+  const response = await fetch(`https://raw.githubusercontent.com/pancakeswap/pancake-toolkit/master/packages/token-lists/src/tokens/pancakeswap-top-100.json`)
+  return response.json()
+}
+
 const getUniswapTokens = async network => {
   const response = await fetch(`https://raw.githubusercontent.com/Uniswap/default-token-list/master/src/tokens/${network}.json`)
     return response.json()
@@ -84,6 +89,7 @@ const getDexTokens = async (exchange, network) => {
     const tokens = await getUniswapTokens(network)
     return tokens
   }
+  if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
 }
 
 const getTokens = async manifest => {
@@ -103,7 +109,7 @@ const getTokens = async manifest => {
 
 export default (async () => {
   const manifest = {
-    mainnet: {uniswap: [], '0x': []},
+    mainnet: {uniswap: [], '0x': [], pancakeswap: []},
     kovan: {uniswap: [], '0x': []},
     ropsten: {uniswap: []},
     wapnet: { coinsswap: [] }
@@ -111,7 +117,9 @@ export default (async () => {
   const tokens = await getTokens(manifest)
 
   for (const network of Object.keys(manifest)) {
+    console.log(network);
     for (const dex of Object.keys(manifest[network])) {
+      console.log(dex);
       const result = {}
       if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
         for (const token of tokens[network][dex]) {

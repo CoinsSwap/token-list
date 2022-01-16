@@ -9,7 +9,7 @@
 ## Why?
 
 Is it me or does like every list have missing icons?
-The internet is overloaded enough, stop trying to load stuff thats moved or gone.
+The internet is overloaded enough, stop trying to load stuff that is moved or gone.
 
 ## How?
 * first check if the token is available in [cryptocurrency-icons](https://github.com/spothq/cryptocurrency-icons)
