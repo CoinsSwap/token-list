@@ -30,9 +30,11 @@
   },
   "dependencies": {
     "@coinsswap/contract-address": "^0.1.7",
+    "canvas": "^2.8.0",
     "color-thief-updated": "^1.0.1",
     "cp-file": "^9.0.0",
     "cryptocurrency-icons": "^0.17.1",
+    "download": "^8.0.0",
     "node-fetch": "^2.6.1",
     "ora": "^5.4.0"
   }

@@ -3,9 +3,9 @@
   "symbol": "WETH",
   "name": "Wrapped Ether",
   "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-  "icon": "generic.svg",
+  "icon": "WETH.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#2a2e2e"
  },
  "DAI": {
   "symbol": "DAI",
@@ -27,9 +27,9 @@
   "symbol": "CRV",
   "name": "Curve DAO Token",
   "address": "0xD533a949740bb3306d119CC777fa900bA034cd52",
-  "icon": "generic.svg",
+  "icon": "CRV.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#24ccd6"
  },
  "UNI": {
   "symbol": "UNI",
@@ -91,9 +91,9 @@
   "symbol": "REPv2",
   "name": "Reputation Augur v2",
   "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
-  "icon": "generic.svg",
+  "icon": "REPv2.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#0c0c24"
  },
  "KNC": {
   "symbol": "KNC",
@@ -179,25 +179,25 @@
   "symbol": "NU",
   "name": "NuCypher",
   "address": "0x4fE83213D56308330EC302a8BD641f1d0113A4Cc",
-  "icon": "generic.svg",
+  "icon": "NU.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#486ac4"
  },
  "AAVE": {
   "symbol": "AAVE",
   "name": "Aave",
   "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
-  "icon": "generic.svg",
+  "icon": "AAVE.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#7188b4"
  },
  "GRT": {
   "symbol": "GRT",
   "name": "The Graph",
   "address": "0xc944E90C64B2c07662A292be6244BDf05Cda44a7",
-  "icon": "generic.svg",
+  "icon": "GRT.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#403ca6"
  },
  "BNT": {
   "symbol": "BNT",
@@ -211,9 +211,9 @@
   "symbol": "SNX",
   "name": "Synthetix Network Token",
   "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-  "icon": "generic.svg",
+  "icon": "SNX.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#0c042c"
  },
  "MANA": {
   "symbol": "MANA",
@@ -283,17 +283,17 @@
   "symbol": "KEEP",
   "name": "Keep Network",
   "address": "0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC",
-  "icon": "generic.svg",
+  "icon": "KEEP.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#54d1ad"
  },
  "TBTC": {
   "symbol": "TBTC",
   "name": "tBTC",
   "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
-  "icon": "generic.svg",
+  "icon": "TBTC.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#7c7a78"
  },
  "MLN": {
   "symbol": "MLN",
@@ -307,17 +307,17 @@
   "symbol": "ENS",
   "name": "Ethereum Name Service",
   "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
-  "icon": "generic.svg",
+  "icon": "ENS.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#749fef"
  },
  "sUSD": {
   "symbol": "sUSD",
   "name": "Synth sUSD",
   "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-  "icon": "generic.svg",
+  "icon": "sUSD.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#d3d2d8"
  },
  "MATIC": {
   "symbol": "MATIC",

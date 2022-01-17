@@ -12,16 +12,14 @@
   "name": "WFTM",
   "address": "0x4e15361fd6b4bb609fa63c81a2be19d873717870",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "WETH": {
   "symbol": "WETH",
   "name": "Wrapped Ether",
   "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "ZRX": {
   "symbol": "ZRX",
@@ -84,8 +82,7 @@
   "name": "Synthetix Network Token",
   "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "LINK": {
   "symbol": "LINK",
@@ -100,8 +97,7 @@
   "name": "sUSD",
   "address": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "TUSD": {
   "symbol": "TUSD",
@@ -116,16 +112,14 @@
   "name": "Sushi",
   "address": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "AAVE": {
   "symbol": "AAVE",
   "name": "Aave",
   "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "YFI": {
   "symbol": "YFI",
@@ -228,8 +222,7 @@
   "name": "Civil Token",
   "address": "0x01fa555c97d7958fa6f771f3bbd5ccd508f81e22",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "DTH": {
   "symbol": "DTH",
@@ -244,8 +237,7 @@
   "name": "FOAM",
   "address": "0x4946fcea7c692606e8908002e55a582af44ac121",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "AST": {
   "symbol": "AST",
@@ -268,8 +260,7 @@
   "name": "DAOstack",
   "address": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "STORJ": {
   "symbol": "STORJ",
@@ -316,8 +307,7 @@
   "name": "Celer Network Token",
   "address": "0x4f9254c83eb525f9fcf346490bbb3ed28a81c667",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "RLC": {
   "symbol": "RLC",
@@ -356,64 +346,56 @@
   "name": "Compound Basic Attention Token",
   "address": "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cDAI": {
   "symbol": "cDAI",
   "name": "Compound Dai",
   "address": "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cSAI": {
   "symbol": "cSAI",
   "name": "Compound Sai (Legacy Dai)",
   "address": "0xf5dce57282a584d2746faf1593d3121fcac444dc",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cETH": {
   "symbol": "cETH",
   "name": "Compound Ether",
   "address": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cREP": {
   "symbol": "cREP",
   "name": "Compound Augur",
   "address": "0x158079ee67fce2f58472a96584a73c7ab9ac95c1",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cUSDC": {
   "symbol": "cUSDC",
   "name": "Compound USD Coin",
   "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cZRX": {
   "symbol": "cZRX",
   "name": "Compound 0x",
   "address": "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "0xBTC": {
   "symbol": "0xBTC",
   "name": "0xBitcoin Token",
   "address": "0xb6ed7644c69416d67b522e20bc294a9a9b405b31",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "SNT": {
   "symbol": "SNT",
@@ -444,8 +426,7 @@
   "name": "UniBright",
   "address": "0x8400d94a5cb0fa0d041a3788e395285d61c9ee5e",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "NMR": {
   "symbol": "NMR",
@@ -548,8 +529,7 @@
   "name": "Gas Token 2",
   "address": "0x0000000000b3f879cb30fe243b4dfee438691c04",
   "icon": "generic.svg",
-  "decimals": 2,
-  "dominantColor": "#ecbc14"
+  "decimals": 2
  },
  "UMA": {
   "symbol": "UMA",
@@ -564,16 +544,14 @@
   "name": "bZx Protocol Token",
   "address": "0x56d811088235f11c8920698a204a5010a788f4b3",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "renBTC": {
   "symbol": "renBTC",
   "name": "renBTC",
   "address": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "LEND": {
   "symbol": "LEND",
@@ -596,120 +574,105 @@
   "name": "Keep",
   "address": "0x85eee30c52b0b379b046fb0f85f4f3dc3009afec",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "mUSD": {
   "symbol": "mUSD",
   "name": "mStable USD",
   "address": "0xe2f2a5c287993345a840db3b0845fbc70f5935a5",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "bUSD": {
   "symbol": "bUSD",
   "name": "Binance USD",
   "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "CRV": {
   "symbol": "CRV",
   "name": "Curve DAO Token",
   "address": "0xd533a949740bb3306d119cc777fa900ba034cd52",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "swUSD": {
   "symbol": "swUSD",
   "name": "Swerve.fi swUSD",
   "address": "0x77C6E4a580c0dCE4E5c7a17d0bc077188a83A059",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "SWRV": {
   "symbol": "SWRV",
   "name": "Swerve DAO Token",
   "address": "0xB8BAa0e4287890a5F79863aB62b7F175ceCbD433",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "sBTC": {
   "symbol": "sBTC",
   "name": "Synth sBTC",
   "address": "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "yUSD": {
   "symbol": "yUSD",
   "name": "yearn Curve.fi yDAI/yUSDC/yUSDT/yTUSD",
   "address": "0x5dbcf33d8c2e976c6b560249878e6f1491bca25c",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "ybCRV": {
   "symbol": "ybCRV",
   "name": "yearn Curve.fi yDAI/yUSDC/yUSDT/yBUSD",
   "address": "0x2994529c0652d127b7842094103715ec5299bbed",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "yUSDC": {
   "symbol": "yUSDC",
   "name": "yearn USDC",
   "address": "0x597ad1e0c13bfe8025993d9e79c69e1c0233522e",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "yDAI": {
   "symbol": "yDAI",
   "name": "yearn DAI",
   "address": "0xacd43e627e64355f1861cec6d3a6688b31a6f952",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "yUSDT": {
   "symbol": "yUSDT",
   "name": "yearn USDT",
   "address": "0x2f08119c6f07c006695e079aafc638b8789faf18",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "yTUSD": {
   "symbol": "yTUSD",
   "name": "yearn TUSD",
   "address": "0x37d19d1c4e1fa9dc47bd1ea12f742a0887eda74a",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "AKRO": {
   "symbol": "AKRO",
   "name": "Akropolis",
   "address": "0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "AUDIO": {
   "symbol": "AUDIO",
   "name": "Audius",
   "address": "0x18aaa7115705e8be94bffebde57af9bfc265b998",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "BAND": {
   "symbol": "BAND",
@@ -724,64 +687,56 @@
   "name": "Based Money",
   "address": "0x68a118ef45063051eac49c7e647ce5ace48a68a5",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "BUSD": {
   "symbol": "BUSD",
   "name": "Binance USD",
   "address": "0x4fabb145d64652a948d72533023f6e7a623c7c53",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "CREAM": {
   "symbol": "CREAM",
   "name": "Cream",
   "address": "0x2ba592f78db6436527729929aaf6c908497cb200",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "DONUT": {
   "symbol": "DONUT",
   "name": "Donut",
   "address": "0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "MTA": {
   "symbol": "MTA",
   "name": "Meta",
   "address": "0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "PAXG": {
   "symbol": "PAXG",
   "name": "PAX Gold",
   "address": "0x45804880de22913dafe09f4980848ece6ecbaf78",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "PICKLE": {
   "symbol": "PICKLE",
   "name": "Pickle Finance",
   "address": "0x429881672b9ae42b8eba0e26cd9c73711b891ca5",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "RENZEC": {
   "symbol": "RENZEC",
   "name": "renZEC",
   "address": "0x1c5db575e2ff833e46a2e9864c22f4b22e0b37c2",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "REP": {
   "symbol": "REP",
@@ -796,31 +751,27 @@
   "name": "sETH",
   "address": "0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "STAKE": {
   "symbol": "STAKE",
   "name": "xDAI Stake",
   "address": "0x0ae055097c6d159879521c384f1d2123d1f195e6",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "TBTC": {
   "symbol": "TBTC",
   "name": "tBTC",
   "address": "0x8daebade922df735c38c80c7ebd708af50815faa",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "1INCH": {
   "symbol": "1INCH",
   "name": "1INCH",
   "address": "0x111111111117dc0aa78b770fa6a738034120c302",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  }
 }

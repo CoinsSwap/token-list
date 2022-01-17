@@ -3,9 +3,8 @@
   "symbol": "WETH",
   "name": "Wrapped Ether",
   "address": "0xc778417E063141139Fce010982780140Aa0cD5Ab",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "icon": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc778417E063141139Fce010982780140Aa0cD5Ab/logo.png",
+  "decimals": 18
  },
  "DAI": {
   "symbol": "DAI",

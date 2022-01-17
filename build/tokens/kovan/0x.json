@@ -28,8 +28,7 @@
   "name": "Wrapped Ether",
   "address": "0xd0a1e359811322d97991e03f863a0c30c2cf029c",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "ZRX": {
   "symbol": "ZRX",
@@ -92,31 +91,27 @@
   "name": "Compound Augur",
   "address": "0xfd874be7e6733bdc6dca9c7cdd97c225ec235d39",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "cZRX": {
   "symbol": "cZRX",
   "name": "Compound 0x",
   "address": "0xc014dc10a57ac78350c5fddb26bb66f1cb0960a0",
   "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
+  "decimals": 8
  },
  "ZWETH": {
   "symbol": "ZWETH",
   "name": "Custom Kovan Wrapped Ether",
   "address": "0x1FcAf05ABa8c7062D6F08E25c77Bf3746fCe5433",
   "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "decimals": 18
  },
  "ZUSDC": {
   "symbol": "ZUSDC",
   "name": "Custom Kovan USD Coin",
   "address": "0x5a719Cf3E02c17c876F6d294aDb5CB7C6eB47e2F",
   "icon": "generic.svg",
-  "decimals": 6,
-  "dominantColor": "#ecbc14"
+  "decimals": 6
  }
 }

@@ -8,6 +8,7 @@ var cp = require('cp-file');
 var ora = require('ora');
 var ColorThief = require('color-thief-updated');
 var contractAddresses = require('@coinsswap/contract-address');
+var download = require('download');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -17,10 +18,12 @@ var cp__default = /*#__PURE__*/_interopDefaultLegacy(cp);
 var ora__default = /*#__PURE__*/_interopDefaultLegacy(ora);
 var ColorThief__default = /*#__PURE__*/_interopDefaultLegacy(ColorThief);
 var contractAddresses__default = /*#__PURE__*/_interopDefaultLegacy(contractAddresses);
+var download__default = /*#__PURE__*/_interopDefaultLegacy(download);
 
 const spinner = ora__default['default']().start();
 
 const write = util.promisify(fs.writeFile);
+const read = util.promisify(fs.readFile);
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
@@ -59,7 +62,7 @@ const get0xTokens = async network => {
 };
 
 const getPancakeswapTokens = async network => {
-  const response = await fetch__default['default'](`https://raw.githubusercontent.com/pancakeswap/pancake-toolkit/master/packages/token-lists/src/tokens/pancakeswap-top-100.json`);
+  const response = await fetch__default['default'](`https://raw.githubusercontent.com/pancakeswap/pancake-toolkit/master/packages/token-lists/src/tokens/pancakeswap-default.json`);
   return response.json()
 };
 
@@ -135,16 +138,31 @@ var service = (async () => {
         for (const token of tokens[network][dex]) {
           manifest[network][dex].push(token.symbol);
 
-          let { symbol, name, address, icon, decimals } = token;
+          let { symbol, name, address, icon, decimals, logoURI } = token;
           if (iconMap.has(symbol)) {
             icon = iconMap.get(symbol);
           } else {
-            icon = iconMap.get('GENERIC');
+            icon = logoURI ? logoURI : iconMap.get('GENERIC');
           }
           await writeIcons(symbol, icon);
 
           const thief = new ColorThief__default['default']();
-          const dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));
+          let dominantColor;
+          if (!iconMap.has(symbol)) {
+            if(logoURI && !logoURI.includes('ipfs')) {
+              try {
+                await download__default['default'](logoURI, 'build/icons/color', {filename: `${symbol}.png`});
+                const buffer = await read(`build/icons/color/${symbol}.png`);
+                dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`));
+                icon = `${symbol}.png`;
+              } catch (e) {
+                console.warn(`nothing found for ${name}`);
+              }
+            }
+          } else {
+            dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));
+          }
+
 
           result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
         }

@@ -1,794 +1,122 @@
 {
- "UST": {
-  "symbol": "UST",
-  "name": "Wrapped UST Token",
-  "address": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
-  "icon": "generic.svg",
+ "WBNB": {
+  "symbol": "WBNB",
+  "name": "WBNB Token",
+  "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+  "icon": "WBNB.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#f3bb0c"
  },
- "XWG": {
-  "symbol": "XWG",
-  "name": "XWG",
-  "address": "0x6b23C89196DeB721e6Fd9726E6C76E4810a464bc",
-  "icon": "generic.svg",
+ "CAKE": {
+  "symbol": "CAKE",
+  "name": "PancakeSwap Token",
+  "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+  "icon": "CAKE.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#3ad2dd"
  },
- "MBOX": {
-  "symbol": "MBOX",
-  "name": "Mobox",
-  "address": "0x3203c9E46cA618C8C1cE5dC67e7e9D75f5da2377",
-  "icon": "generic.svg",
+ "BUSD": {
+  "symbol": "BUSD",
+  "name": "Binance Pegged BUSD",
+  "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+  "icon": "BUSD.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#f4bc0c"
  },
- "PVU": {
-  "symbol": "PVU",
-  "name": "Plant vs Undead Token",
-  "address": "0x31471E0791fCdbE82fbF4C44943255e923F1b794",
-  "icon": "generic.svg",
+ "USDT": {
+  "symbol": "USDT",
+  "name": "Binance Pegged USDT",
+  "address": "0x55d398326f99059fF775485246999027B3197955",
+  "icon": "usdt.svg",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#8ecebc"
  },
- "RACA": {
-  "symbol": "RACA",
-  "name": "Radio Caca V2",
-  "address": "0x12BB890508c125661E03b09EC06E404bc9289040",
-  "icon": "generic.svg",
+ "BTCB": {
+  "symbol": "BTCB",
+  "name": "Binance Pegged Bitcoin",
+  "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+  "icon": "BTCB.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#f4941c"
  },
- "C98": {
-  "symbol": "C98",
-  "name": "Coin98",
-  "address": "0xaEC945e04baF28b135Fa7c640f624f8D90F1C3a6",
-  "icon": "generic.svg",
+ "ETH": {
+  "symbol": "ETH",
+  "name": "Binance Pegged ETH",
+  "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+  "icon": "eth.svg",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#c8d1f6"
  },
- "BMON": {
-  "symbol": "BMON",
-  "name": "Binamon",
-  "address": "0x08ba0619b1e7A582E0BCe5BBE9843322C954C340",
-  "icon": "generic.svg",
+ "BUNNY": {
+  "symbol": "BUNNY",
+  "name": "Bunny Token",
+  "address": "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+  "icon": "BUNNY.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#ec6e9d"
  },
- "BP": {
-  "symbol": "BP",
-  "name": "BunnyPark",
-  "address": "0xACB8f52DC63BB752a51186D1c55868ADbFfEe9C1",
-  "icon": "generic.svg",
+ "XVS": {
+  "symbol": "XVS",
+  "name": "Venus Token",
+  "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+  "icon": "XVS.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#f4bb50"
  },
- "ADA": {
-  "symbol": "ADA",
-  "name": "Cardano Token",
-  "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
-  "icon": "ada.svg",
-  "decimals": 18,
-  "dominantColor": "#bcc2c7"
- },
- "NAFT": {
-  "symbol": "NAFT",
-  "name": "Nafter",
-  "address": "0xD7730681B1DC8f6F969166B29D8A5EA8568616a3",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "HERO": {
-  "symbol": "HERO",
-  "name": "Metahero",
-  "address": "0xD40bEDb44C081D2935eebA6eF5a3c8A31A1bBE13",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "CHESS": {
-  "symbol": "CHESS",
-  "name": "Chess",
-  "address": "0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "WANA": {
-  "symbol": "WANA",
-  "name": "Wanaka Farm",
-  "address": "0x339C72829AB7DD45C3C52f965E7ABe358dd8761E",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SFUND": {
-  "symbol": "SFUND",
-  "name": "SeedifyFund",
-  "address": "0x477bC8d23c634C154061869478bce96BE6045D12",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ALICE": {
-  "symbol": "ALICE",
-  "name": "ALICE",
-  "address": "0xAC51066d7bEC65Dc4589368da368b212745d63E8",
-  "icon": "generic.svg",
-  "decimals": 6,
-  "dominantColor": "#ecbc14"
- },
- "XRP": {
-  "symbol": "XRP",
-  "name": "XRP Token",
-  "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
-  "icon": "xrp.svg",
-  "decimals": 18,
-  "dominantColor": "#242c2c"
- },
- "AXS": {
-  "symbol": "AXS",
-  "name": "Axie Infinity Shard",
-  "address": "0x715D400F88C167884bbCc41C5FeA407ed4D2f8A0",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "TRX": {
-  "symbol": "TRX",
-  "name": "TRON",
-  "address": "0x85EAC5Ac2F758618dFa09bDbe0cf174e7d574D5B",
-  "icon": "trx.svg",
-  "decimals": 18,
-  "dominantColor": "#ec0424"
- },
- "DERC": {
-  "symbol": "DERC",
-  "name": "DeRace Token",
-  "address": "0x373E768f79c820aA441540d254dCA6d045c6d25b",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BSCPAD": {
-  "symbol": "BSCPAD",
-  "name": "BSCPAD.com",
-  "address": "0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BIN": {
-  "symbol": "BIN",
-  "name": "Binemon",
-  "address": "0xe56842Ed550Ff2794F010738554db45E60730371",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ATA": {
-  "symbol": "ATA",
-  "name": "Automata",
-  "address": "0xA2120b9e674d3fC3875f415A7DF52e382F141225",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "LINK": {
-  "symbol": "LINK",
-  "name": "ChainLink Token",
-  "address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
-  "icon": "link.svg",
-  "decimals": 18,
-  "dominantColor": "#2c5cdc"
- },
- "PAID": {
-  "symbol": "PAID",
-  "name": "PAID Network",
-  "address": "0xAD86d0E9764ba90DDD68747D64BFfBd79879a238",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BTT": {
-  "symbol": "BTT",
-  "name": "BitTorrent",
-  "address": "0x8595F9dA7b868b1822194fAEd312235E43007b49",
-  "icon": "btt.svg",
-  "decimals": 18,
-  "dominantColor": "#0b0b0b"
- },
- "TLM": {
-  "symbol": "TLM",
-  "name": "Alien Worlds Trilium",
-  "address": "0x2222227E22102Fe3322098e4CBfE18cFebD57c95",
-  "icon": "generic.svg",
-  "decimals": 4,
-  "dominantColor": "#ecbc14"
- },
- "ITAM": {
-  "symbol": "ITAM",
-  "name": "ITAM",
-  "address": "0x04C747b40Be4D535fC83D09939fb0f626F32800B",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "NRV": {
-  "symbol": "NRV",
-  "name": "Nerve",
-  "address": "0x42F6f551ae042cBe50C739158b4f0CAC0Edb9096",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "TWT": {
-  "symbol": "TWT",
-  "name": "Trust Wallet",
-  "address": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "TKO": {
-  "symbol": "TKO",
-  "name": "Tokocrypto Token",
-  "address": "0x9f589e3eabe42ebC94A44727b3f3531C0c877809",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "POTS": {
-  "symbol": "POTS",
-  "name": "Moonpot",
-  "address": "0x3Fcca8648651E5b974DD6d3e50F61567779772A8",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SMON": {
-  "symbol": "SMON",
-  "name": "StarMon",
-  "address": "0xAB15B79880f11cFfb58dB25eC2bc39d28c4d80d2",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "MASK": {
-  "symbol": "MASK",
-  "name": "Mask Network",
-  "address": "0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ALPHA": {
-  "symbol": "ALPHA",
-  "name": "AlphaToken",
-  "address": "0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SXP": {
-  "symbol": "SXP",
-  "name": "Swipe",
-  "address": "0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "QBT": {
-  "symbol": "QBT",
-  "name": "Qubit Token",
-  "address": "0x17B7163cf1Dbd286E262ddc68b553D899B93f526",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "CHR": {
-  "symbol": "CHR",
-  "name": "Chroma",
-  "address": "0xf9CeC8d50f6c8ad3Fb6dcCEC577e05aA32B224FE",
-  "icon": "generic.svg",
-  "decimals": 6,
-  "dominantColor": "#ecbc14"
- },
- "RAMP": {
-  "symbol": "RAMP",
-  "name": "RAMP DEFI",
-  "address": "0x8519EA49c997f50cefFa444d240fB655e89248Aa",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SHI": {
-  "symbol": "SHI",
-  "name": "Shirtum",
-  "address": "0x7269d98Af4aA705e0B1A5D8512FadB4d45817d5a",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "NFTB": {
-  "symbol": "NFTB",
-  "name": "NFTB",
-  "address": "0xde3dbBE30cfa9F437b293294d1fD64B26045C71A",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "CP": {
-  "symbol": "CP",
-  "name": "CP",
-  "address": "0x82C19905B036bf4E329740989DCF6aE441AE26c1",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "CCAR": {
-  "symbol": "CCAR",
-  "name": "CryptoCars",
-  "address": "0x50332bdca94673F33401776365b66CC4e81aC81d",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "EPS": {
-  "symbol": "EPS",
-  "name": "Ellipsis",
-  "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "WIN": {
-  "symbol": "WIN",
-  "name": "WINk",
-  "address": "0xaeF0d72a118ce24feE3cD1d43d383897D05B4e99",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "DOGE": {
-  "symbol": "DOGE",
-  "name": "Dogecoin",
-  "address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
-  "icon": "doge.svg",
-  "decimals": 8,
-  "dominantColor": "#e4d49c"
- },
- "BABYDOGE": {
-  "symbol": "BABYDOGE",
-  "name": "Baby Doge Coin",
-  "address": "0xc748673057861a797275CD8A068AbB95A902e8de",
-  "icon": "generic.svg",
+ "SAFEMOON": {
+  "symbol": "SAFEMOON",
+  "name": "SafeMoon",
+  "address": "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+  "icon": "SAFEMOON.png",
   "decimals": 9,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#242c34"
  },
- "RUSD": {
-  "symbol": "RUSD",
-  "name": "rUSD",
-  "address": "0x07663837218A003e66310a01596af4bf4e44623D",
-  "icon": "generic.svg",
+ "ALPACA": {
+  "symbol": "ALPACA",
+  "name": "Alpaca",
+  "address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+  "icon": "ALPACA.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#40ba7d"
  },
- "SPS": {
-  "symbol": "SPS",
-  "name": "Splintershards",
-  "address": "0x1633b7157e7638C4d6593436111Bf125Ee74703F",
-  "icon": "generic.svg",
+ "DOT": {
+  "symbol": "DOT",
+  "name": "Polkadot Token",
+  "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+  "icon": "dot.svg",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#e4047c"
  },
- "SKILL": {
-  "symbol": "SKILL",
-  "name": "CryptoBlades Skill Token",
-  "address": "0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab",
-  "icon": "generic.svg",
+ "FINE": {
+  "symbol": "FINE",
+  "name": "Refinable",
+  "address": "0x4e6415a5727ea08aAE4580057187923aeC331227",
+  "icon": "FINE.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#bebaba"
  },
- "BELT": {
-  "symbol": "BELT",
-  "name": "BELT Token",
-  "address": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
-  "icon": "generic.svg",
+ "DAI": {
+  "symbol": "DAI",
+  "name": "Binance Pegged DAI",
+  "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+  "icon": "dai.svg",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#fcf0d4"
  },
- "FLOKI": {
-  "symbol": "FLOKI",
-  "name": "FLOKI",
-  "address": "0x2B3F34e9D4b127797CE6244Ea341a83733ddd6E4",
-  "icon": "generic.svg",
-  "decimals": 9,
-  "dominantColor": "#ecbc14"
- },
- "TUSD": {
-  "symbol": "TUSD",
-  "name": "TrueUSD",
-  "address": "0x14016E85a25aeb13065688cAFB43044C2ef86784",
-  "icon": "tusd.svg",
+ "USDC": {
+  "symbol": "USDC",
+  "name": "Binance Pegged USD Coin",
+  "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+  "icon": "usdc.svg",
   "decimals": 18,
-  "dominantColor": "#cbcbe0"
+  "dominantColor": "#2675cc"
  },
- "ONE": {
-  "symbol": "ONE",
-  "name": "Harmony ONE",
-  "address": "0x03fF0ff224f904be3118461335064bB48Df47938",
-  "icon": "generic.svg",
+ "DOP": {
+  "symbol": "DOP",
+  "name": "Dopple Finance",
+  "address": "0x844FA82f1E54824655470970F7004Dd90546bB28",
+  "icon": "DOP.png",
   "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ECC": {
-  "symbol": "ECC",
-  "name": "Etherconnect Coin",
-  "address": "0x8D047F4F57A190C96c8b9704B39A1379E999D82B",
-  "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
- },
- "MIST": {
-  "symbol": "MIST",
-  "name": "Mist",
-  "address": "0x68E374F856bF25468D365E539b700b648Bf94B67",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "PETG": {
-  "symbol": "PETG",
-  "name": "PET GAMES",
-  "address": "0x09607078980CbB0665ABa9c6D1B84b8eAD246aA0",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "DPET": {
-  "symbol": "DPET",
-  "name": "My DeFi Pet Token",
-  "address": "0xfb62AE373acA027177D1c18Ee0862817f9080d08",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "UNI": {
-  "symbol": "UNI",
-  "name": "Uniswap",
-  "address": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
-  "icon": "uni.svg",
-  "decimals": 18,
-  "dominantColor": "#fc057c"
- },
- "UNCX": {
-  "symbol": "UNCX",
-  "name": "UniCrypt on xDai on BSC",
-  "address": "0x09a6c44c3947B69E2B45F4D51b67E6a39ACfB506",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "MINIFOOTBALL": {
-  "symbol": "MINIFOOTBALL",
-  "name": "MiniFootball",
-  "address": "0xD024Ac1195762F6F13f8CfDF3cdd2c97b33B248b",
-  "icon": "generic.svg",
-  "decimals": 9,
-  "dominantColor": "#ecbc14"
- },
- "IOTX": {
-  "symbol": "IOTX",
-  "name": "IoTeX Network",
-  "address": "0x9678E42ceBEb63F23197D726B29b1CB20d0064E5",
-  "icon": "iotx.svg",
-  "decimals": 18,
-  "dominantColor": "#04d4d4"
- },
- "FARA": {
-  "symbol": "FARA",
-  "name": "FaraCrystal",
-  "address": "0xF4Ed363144981D3A65f42e7D0DC54FF9EEf559A1",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "VAI": {
-  "symbol": "VAI",
-  "name": "VAI Stablecoin",
-  "address": "0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BEAR": {
-  "symbol": "BEAR",
-  "name": "Bear",
-  "address": "0xc3EAE9b061Aa0e1B9BD3436080Dc57D2d63FEdc1",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SFP": {
-  "symbol": "SFP",
-  "name": "SafePal Token",
-  "address": "0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "YAY": {
-  "symbol": "YAY",
-  "name": "YAY Games",
-  "address": "0x524dF384BFFB18C0C8f3f43d012011F8F9795579",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "DODO": {
-  "symbol": "DODO",
-  "name": "DODO bird",
-  "address": "0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ZIN": {
-  "symbol": "ZIN",
-  "name": "ZomaInfinity",
-  "address": "0xFbe0b4aE6E5a200c36A341299604D5f71A5F0a48",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "SUSHI": {
-  "symbol": "SUSHI",
-  "name": "SushiToken",
-  "address": "0x947950BcC74888a40Ffa2593C5798F11Fc9124C4",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "MONI": {
-  "symbol": "MONI",
-  "name": "Monsta Infinite Token",
-  "address": "0x9573c88aE3e37508f87649f87c4dd5373C9F31e0",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ALU": {
-  "symbol": "ALU",
-  "name": "Altura",
-  "address": "0x8263CD1601FE73C066bf49cc09841f35348e3be0",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BNX": {
-  "symbol": "BNX",
-  "name": "BinaryX",
-  "address": "0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "INJ": {
-  "symbol": "INJ",
-  "name": "Injective Protocol",
-  "address": "0xa2B726B1145A4773F68593CF171187d8EBe4d495",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "PWT": {
-  "symbol": "PWT",
-  "name": "PandaInu Wallet Token",
-  "address": "0xf3eDD4f14a018df4b6f02Bf1b2cF17A8120519A2",
-  "icon": "generic.svg",
-  "decimals": 8,
-  "dominantColor": "#ecbc14"
- },
- "TRONPAD": {
-  "symbol": "TRONPAD",
-  "name": "TRONPAD.network",
-  "address": "0x1Bf7AedeC439D6BFE38f8f9b20CF3dc99e3571C4",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "LINA": {
-  "symbol": "LINA",
-  "name": "Linear Token",
-  "address": "0x762539b45A1dCcE3D36d080F74d1AED37844b878",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "KMON": {
-  "symbol": "KMON",
-  "name": "KmonCoin",
-  "address": "0xc732B6586A93b6B7CF5FeD3470808Bc74998224D",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "TPT": {
-  "symbol": "TPT",
-  "name": "TokenPocket Token",
-  "address": "0xECa41281c24451168a37211F0bc2b8645AF45092",
-  "icon": "generic.svg",
-  "decimals": 4,
-  "dominantColor": "#ecbc14"
- },
- "FRONT": {
-  "symbol": "FRONT",
-  "name": "Frontier Token",
-  "address": "0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "GOLD": {
-  "symbol": "GOLD",
-  "name": "CyberDragon Gold",
-  "address": "0xb3a6381070B1a15169DEA646166EC0699fDAeA79",
-  "icon": "gold.svg",
-  "decimals": 18,
-  "dominantColor": "#fcf2d9"
- },
- "DRACE": {
-  "symbol": "DRACE",
-  "name": "DeathRoad Token",
-  "address": "0xA6c897CaaCA3Db7fD6e2D2cE1a00744f40aB87Bb",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "TSC": {
-  "symbol": "TSC",
-  "name": "TrusterCoin",
-  "address": "0xA2a26349448ddAfAe34949a6Cc2cEcF78c0497aC",
-  "icon": "generic.svg",
-  "decimals": 9,
-  "dominantColor": "#ecbc14"
- },
- "DRS": {
-  "symbol": "DRS",
-  "name": "DragonSlayer",
-  "address": "0xc8E8ecB2A5B5d1eCFf007BF74d15A86434aA0c5C",
-  "icon": "generic.svg",
-  "decimals": 9,
-  "dominantColor": "#ecbc14"
- },
- "HUNNY": {
-  "symbol": "HUNNY",
-  "name": "Hunny Token",
-  "address": "0x565b72163f17849832A692A3c5928cc502f46D69",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "WEYU": {
-  "symbol": "WEYU",
-  "name": "WEYU",
-  "address": "0xFAfD4CB703B25CB22f43D017e7e0d75FEBc26743",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ATOM": {
-  "symbol": "ATOM",
-  "name": "Cosmos Token",
-  "address": "0x0Eb3a705fc54725037CC9e008bDede697f62F335",
-  "icon": "atom.svg",
-  "decimals": 18,
-  "dominantColor": "#a4a5af"
- },
- "PMON": {
-  "symbol": "PMON",
-  "name": "Polkamon",
-  "address": "0x1796ae0b0fa4862485106a0de9b654eFE301D0b2",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "REEF": {
-  "symbol": "REEF",
-  "name": "Reef.finance",
-  "address": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "PINK": {
-  "symbol": "PINK",
-  "name": "Pink Token",
-  "address": "0x9133049Fb1FdDC110c92BF5b7Df635abB70C89DC",
-  "icon": "pink.svg",
-  "decimals": 18,
-  "dominantColor": "#ec7cac"
- },
- "NBL": {
-  "symbol": "NBL",
-  "name": "Nobility",
-  "address": "0xA67a13c9283Da5AABB199Da54a9Cb4cD8B9b16bA",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "FORM": {
-  "symbol": "FORM",
-  "name": "Formation Finance",
-  "address": "0x25A528af62e56512A19ce8c3cAB427807c28CC19",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "KABY": {
-  "symbol": "KABY",
-  "name": "Kaby Arena",
-  "address": "0x02A40C048eE2607B5f5606e445CFc3633Fb20b58",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "DVI": {
-  "symbol": "DVI",
-  "name": "Dvision",
-  "address": "0x758FB037A375F17c7e195CC634D77dA4F554255B",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "MND": {
-  "symbol": "MND",
-  "name": "Mound Token",
-  "address": "0x4c97c901B5147F8C1C7Ce3c5cF3eB83B44F244fE",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "UNCL": {
-  "symbol": "UNCL",
-  "name": "UNCL on xDai on BSC",
-  "address": "0x0E8D5504bF54D9E44260f8d153EcD5412130CaBb",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "ALIX": {
-  "symbol": "ALIX",
-  "name": "AlinX",
-  "address": "0xaF6Bd11A6F8f9c44b9D18f5FA116E403db599f8E",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "POCO": {
-  "symbol": "POCO",
-  "name": "Poco Token",
-  "address": "0x394bBA8F309f3462b31238B3fd04b83F71A98848",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "HONEY": {
-  "symbol": "HONEY",
-  "name": "Honey token",
-  "address": "0xFa363022816aBf82f18a9C2809dCd2BB393F6AC5",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
- },
- "BEL": {
-  "symbol": "BEL",
-  "name": "Bella Protocol",
-  "address": "0x8443f091997f06a61670B735ED92734F5628692F",
-  "icon": "generic.svg",
-  "decimals": 18,
-  "dominantColor": "#ecbc14"
+  "dominantColor": "#99dbf5"
  }
 }
