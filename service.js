@@ -1,7 +1,6 @@
 'use strict';
 
-var fs = require('fs');
-var util = require('util');
+var promises = require('fs/promises');
 var icons = require('cryptocurrency-icons/manifest.json');
 var fetch = require('node-fetch');
 var cp = require('cp-file');
@@ -19,9 +18,6 @@ var contractAddresses__default = /*#__PURE__*/_interopDefaultLegacy(contractAddr
 var download__default = /*#__PURE__*/_interopDefaultLegacy(download);
 
 const spinner = ora__default['default']().start();
-
-const write = util.promisify(fs.writeFile);
-const read = util.promisify(fs.readFile);
 
 const writeIcons = async (symbol, icon) => {
   const icons = {
@@ -132,12 +128,17 @@ const tokenTask = async (manifest, token, network, dex, result) => {
           if (!iconMap.has(symbol)) {
             if(logoURI && !logoURI.includes('ipfs')) {
               try {
-                await download__default['default'](logoURI, 'build/icons/color', {filename: `${symbol}.png`});
-                const buffer = await read(`build/icons/color/${symbol}.png`);
-                // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
-                icon = `${symbol}.png`;
-              } catch (e) {
-                console.warn(`nothing found for ${name}`);
+                const fd = await promises.open(`build/icons/color/${symbol}.png`);
+                await fd.close();
+              } catch (error) {
+                try {
+                  await download__default['default'](logoURI, 'build/icons/color', {filename: `${symbol}.png`});
+                  const buffer = await promises.readFile(`build/icons/color/${symbol}.png`);
+                  // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
+                  icon = `${symbol}.png`;
+                } catch (e) {
+                  console.warn(`nothing found for ${name}`);
+                }
               }
             }
           }
@@ -149,15 +150,15 @@ const tokenTask = async (manifest, token, network, dex, result) => {
 };
 
 const dexTask = async (manifest ,tokens, dex, network) => {
-  const promises = [];
+  const promises$1 = [];
   console.log(dex);
   const result = {};
   if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
     for (const token of tokens[network][dex]) {
-      promises.push(tokenTask(manifest, token, network, dex, result));
+      promises$1.push(tokenTask(manifest, token, network, dex, result));
     }
-    await Promise.all(promises);
-    await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
+    await Promise.all(promises$1);
+    await promises.writeFile(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
   }
 };
 
@@ -172,16 +173,16 @@ var service = (async () => {
   };
   const tokens = await getTokens(manifest);
 
-  const promises = [];
+  const promises$1 = [];
 
   for (const network of Object.keys(manifest)) {
     console.log(network);
     for (const dex of Object.keys(manifest[network])) {
-      promises.push(dexTask(manifest, tokens, dex, network));
+      promises$1.push(dexTask(manifest, tokens, dex, network));
     }
   }
-  await Promise.all(promises);
-  await write('./build/manifest.json', JSON.stringify(manifest, null, 1));
+  await Promise.all(promises$1);
+  await promises.writeFile('./build/manifest.json', JSON.stringify(manifest, null, 1));
 })();
 
 module.exports = service;

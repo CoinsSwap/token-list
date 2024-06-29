@@ -1,5 +1,4 @@
-import { writeFile, readFile } from 'fs'
-import { promisify } from 'util'
+import { writeFile, readFile, open } from 'fs/promises'
 import icons from 'cryptocurrency-icons/manifest.json'
 import fetch from 'node-fetch'
 import avatars from './avatars'
@@ -9,9 +8,6 @@ import ora from 'ora'
 import contractAddresses from '@coinsswap/contract-address'
 import download from 'download'
 const spinner = ora().start()
-
-const write = promisify(writeFile);
-const read = promisify(readFile);
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
@@ -146,12 +142,17 @@ const tokenTask = async (manifest, token, network, dex, result) => {
           if (!iconMap.has(symbol)) {
             if(logoURI && !logoURI.includes('ipfs')) {
               try {
-                await download(logoURI, 'build/icons/color', {filename: `${symbol}.png`})
-                const buffer = await read(`build/icons/color/${symbol}.png`)
-                // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
-                icon = `${symbol}.png`
-              } catch (e) {
-                console.warn(`nothing found for ${name}`);
+                const fd = await open(`build/icons/color/${symbol}.png`)
+                await fd.close()
+              } catch (error) {
+                try {
+                  await download(logoURI, 'build/icons/color', {filename: `${symbol}.png`})
+                  const buffer = await readFile(`build/icons/color/${symbol}.png`)
+                  // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
+                  icon = `${symbol}.png`
+                } catch (e) {
+                  console.warn(`nothing found for ${name}`);
+                }
               }
             }
           } else {
@@ -173,7 +174,7 @@ const dexTask = async (manifest ,tokens, dex, network) => {
       promises.push(tokenTask(manifest, token, network, dex, result))
     }
     await Promise.all(promises)
-    await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
+    await writeFile(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
   }
 }
 
@@ -197,5 +198,5 @@ export default (async () => {
     }
   }
   await Promise.all(promises)
-  await write('./build/manifest.json', JSON.stringify(manifest, null, 1))
+  await writeFile('./build/manifest.json', JSON.stringify(manifest, null, 1))
 })()
