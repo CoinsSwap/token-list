@@ -127,6 +127,7 @@ const getTokens = async manifest => {
 }
 
 const tokenTask = async (manifest, token, network, dex, result) => {
+if (token.symbol === 'CON') return
   manifest[network][dex].push(token.symbol)
 
           let { symbol, name, address, icon, decimals, logoURI } = token
@@ -135,6 +136,7 @@ const tokenTask = async (manifest, token, network, dex, result) => {
           } else {
             icon = logoURI ? logoURI : iconMap.get('GENERIC')
           }
+          
           await writeIcons(symbol, icon)
 
           // const thief = new ColorThief()

@@ -1,11 +1,4 @@
 {
- "ZRX": {
-  "symbol": "ZRX",
-  "name": "0x Protocol Token",
-  "address": "0xdF0b61355d1dc4c11588Ea1214d34fE305225f1D",
-  "icon": "zrx.svg",
-  "decimals": 18
- },
  "WETH": {
   "symbol": "WETH",
   "name": "Wrapped Ether",
@@ -18,6 +11,13 @@
   "name": "CoinSSwap Token",
   "address": "0x29a969D4f6cd3C2A07a49d361FF705F11A1729E8",
   "icon": "generic.svg",
+  "decimals": 18
+ },
+ "ZRX": {
+  "symbol": "ZRX",
+  "name": "0x Protocol Token",
+  "address": "0xdF0b61355d1dc4c11588Ea1214d34fE305225f1D",
+  "icon": "zrx.svg",
   "decimals": 18
  }
 }
