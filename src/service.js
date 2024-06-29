@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 import avatars from './avatars'
 import cp from 'cp-file'
 import ora from 'ora'
-import ColorThief from 'color-thief-updated'
+// import ColorThief from 'color-thief-updated'
 import contractAddresses from '@coinsswap/contract-address'
 import download from 'download'
 const spinner = ora().start()
@@ -39,19 +39,30 @@ for (const {symbol} of icons) {
 }
 
 const get0xTokens = async network => {
-  let url = 'https://api.0x.org/swap/v1/tokens'
+  try {
+    let url = 'https://api.0x.org/swap/v1/tokens'
 
-  if (network && network !== 'mainnet') url = `https://${network}.api.0x.org/swap/v1/tokens`
+    if (network && network !== 'mainnet') url = `https://${network}.api.0x.org/swap/v1/tokens`
 
-  let tokens = await fetch(url)
-  tokens = await tokens.json()
-  tokens = tokens.records
-  return tokens
+    let tokens = await fetch(url)
+    tokens = await tokens.json()
+    tokens = tokens.records
+    return tokens
+  } catch (error) {
+    return []
+  }
 }
 
 const getPancakeswapTokens = async network => {
-  const response = await fetch(`https://raw.githubusercontent.com/pancakeswap/pancake-toolkit/master/packages/token-lists/src/tokens/pancakeswap-default.json`)
-  return response.json()
+  const response = await fetch(`https://tokens.pancakeswap.finance/pancakeswap-top-100.json`)
+  const result = await response.json()
+  return result.tokens
+}
+
+const getCoinGeckoTokens = async network => {
+  const response = await fetch(`https://tokens.pancakeswap.finance/coingecko.json`)
+  const result = await response.json()
+  return result.tokens
 }
 
 const getArtOnlineTokens = async network => {
@@ -89,13 +100,19 @@ const getWapnetTokens = async network => {
 
 
 const getDexTokens = async (exchange, network) => {
-  if (exchange === 'coinsswap') return getWapnetTokens(network)
-  if (exchange === '0x') return get0xTokens(network)
-  if (exchange === 'uniswap') {
-    const tokens = await getUniswapTokens(network)
-    return tokens
+  try {
+    if (exchange === 'coinsswap') return getWapnetTokens(network)
+      // if (exchange === '0x') return get0xTokens(network)
+      if (exchange === 'uniswap') {
+        const tokens = await getUniswapTokens(network)
+        return tokens
+      }
+      if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
+      if (exchange === 'coingecko') return getCoinGeckoTokens(network)
+  } catch (error) {
+    console.warn(error);
+    return []
   }
-  if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
 }
 
 const getTokens = async manifest => {
@@ -113,23 +130,8 @@ const getTokens = async manifest => {
   return tokens
 }
 
-export default (async () => {
-  const manifest = {
-    mainnet: {uniswap: [], '0x': [], pancakeswap: []},
-    kovan: {uniswap: [], '0x': []},
-    ropsten: {uniswap: []},
-    wapnet: { coinsswap: [] }
-  }
-  const tokens = await getTokens(manifest)
-
-  for (const network of Object.keys(manifest)) {
-    console.log(network);
-    for (const dex of Object.keys(manifest[network])) {
-      console.log(dex);
-      const result = {}
-      if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
-        for (const token of tokens[network][dex]) {
-          manifest[network][dex].push(token.symbol)
+const tokenTask = async (manifest, token, network, dex, result) => {
+  manifest[network][dex].push(token.symbol)
 
           let { symbol, name, address, icon, decimals, logoURI } = token
           if (iconMap.has(symbol)) {
@@ -139,29 +141,61 @@ export default (async () => {
           }
           await writeIcons(symbol, icon)
 
-          const thief = new ColorThief()
-          let dominantColor
+          // const thief = new ColorThief()
+          // let dominantColor
           if (!iconMap.has(symbol)) {
             if(logoURI && !logoURI.includes('ipfs')) {
               try {
                 await download(logoURI, 'build/icons/color', {filename: `${symbol}.png`})
                 const buffer = await read(`build/icons/color/${symbol}.png`)
-                dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
+                // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
                 icon = `${symbol}.png`
               } catch (e) {
                 console.warn(`nothing found for ${name}`);
               }
             }
           } else {
-            dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`))
+            // dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`))
           }
 
 
-          result[symbol] = { symbol, name, address, icon, decimals, dominantColor }
-        }
-        await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
-      }
+          // result[symbol] = { symbol, name, address, icon, decimals, dominantColor }
+          result[symbol] = { symbol, name, address, icon, decimals }
+
+}
+
+const dexTask = async (manifest ,tokens, dex, network) => {
+  const promises = []
+  console.log(dex);
+  const result = {}
+  if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
+    for (const token of tokens[network][dex]) {
+      promises.push(tokenTask(manifest, token, network, dex, result))
+    }
+    await Promise.all(promises)
+    await write(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
+  }
+}
+
+export default (async () => {
+  const manifest = {
+    mainnet: {uniswap: []},
+    kovan: {uniswap: []},
+    wapnet: { coinsswap: [] },
+    binance: {
+      pancakeswap: [], coingecko: []
     }
   }
+  const tokens = await getTokens(manifest)
+
+  const promises = []
+
+  for (const network of Object.keys(manifest)) {
+    console.log(network);
+    for (const dex of Object.keys(manifest[network])) {
+      promises.push(dexTask(manifest, tokens, dex, network))
+    }
+  }
+  await Promise.all(promises)
   await write('./build/manifest.json', JSON.stringify(manifest, null, 1))
 })()

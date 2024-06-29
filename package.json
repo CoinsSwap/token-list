@@ -24,18 +24,18 @@
   },
   "homepage": "https://github.com/CoinsSwap/token-list#readme",
   "devDependencies": {
-    "@rollup/plugin-json": "^4.1.0",
-    "rollup": "^2.45.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "rollup": "^4.18.0",
     "zip-dir": "^2.0.0"
   },
   "dependencies": {
-    "@coinsswap/contract-address": "^0.1.7",
-    "canvas": "^2.8.0",
+    "@coinsswap/contract-address": "^0.1.8",
+    "canvas": "^2.11.2",
     "color-thief-updated": "^1.0.1",
-    "cp-file": "^9.0.0",
-    "cryptocurrency-icons": "^0.17.1",
+    "cp-file": "^10.0.0",
+    "cryptocurrency-icons": "^0.18.1",
     "download": "^8.0.0",
-    "node-fetch": "^2.6.1",
-    "ora": "^5.4.0"
+    "node-fetch": "^3.3.2",
+    "ora": "^8.0.1"
   }
 }
