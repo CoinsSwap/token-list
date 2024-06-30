@@ -1,25 +1,5 @@
 'use strict';
 
-function _interopNamespace(e) {
-  if (e && e.__esModule) return e;
-  var n = Object.create(null);
-  if (e) {
-    Object.keys(e).forEach(function (k) {
-      if (k !== 'default') {
-        var d = Object.getOwnPropertyDescriptor(e, k);
-        Object.defineProperty(n, k, d.get ? d : {
-          enumerable: true,
-          get: function () {
-            return e[k];
-          }
-        });
-      }
-    });
-  }
-  n['default'] = e;
-  return Object.freeze(n);
-}
-
 class TokenList {
   /**
    * @param {String} name
@@ -59,7 +39,7 @@ class TokenList {
       return this.transformTokens(await response.json())
     }
     prefix = prefix || './build/tokens';
-    const importee = await Promise.resolve().then(function () { return /*#__PURE__*/_interopNamespace(require(`${prefix}/${network}/${name}.json`)); });
+    const importee = await import(`${prefix}/${network}/${name}.json`);
     return this.transformTokens(importee.default)
   }
 }

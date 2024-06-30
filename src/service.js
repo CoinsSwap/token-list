@@ -1,75 +1,54 @@
-import { writeFile, readFile, open } from 'fs/promises'
-import icons from 'cryptocurrency-icons/manifest.json'
-import fetch from 'node-fetch'
-import avatars from './avatars'
-import cp from 'cp-file'
-import ora from 'ora'
-// import ColorThief from 'color-thief-updated'
-import contractAddresses from '@coinsswap/contract-address'
-import download from 'download'
-const spinner = ora().start()
+import { writeFile, open, copyFile, readFile } from 'fs/promises';
+import icons from 'cryptocurrency-icons/manifest.json' with { type: 'json' };
+import fetch from 'node-fetch';
+import ora from 'ora';
+import ColorThief from 'color-thief-updated';
+import contractAddresses from '@coinsswap/contract-address';
+import download from 'download';
+
+const spinner = ora().start();
 
 const rgbToHex = ([r,g,b]) => {
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
-}
+};
 
-const writeIcons = async (symbol, icon) => {
+const writeIcons = async (icon) => {
   const icons = {
     black: `./node_modules/cryptocurrency-icons/svg/black/${icon}`,
     white: `./node_modules/cryptocurrency-icons/svg/white/${icon}`,
     color: `./node_modules/cryptocurrency-icons/svg/color/${icon}`
-  }
-  symbol = symbol.toLowerCase()
+  };
   for(let icon of Object.keys(icons)) {
     if (!icons[icon].includes('https')) {
-      await cp(icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './build/icons'))
+      await copyFile(icons[icon], icons[icon].replace('./node_modules/cryptocurrency-icons/svg', './build/icons'));
     }
   }
-}
+};
 
-const iconMap = new Map()
+const iconMap = new Map();
 
 for (const {symbol} of icons) {
-  const icon = symbol.toLowerCase()
-  iconMap.set(symbol, `${icon}.svg`)
-}
-
-const get0xTokens = async network => {
-  try {
-    let url = 'https://api.0x.org/swap/v1/tokens'
-
-    if (network && network !== 'mainnet') url = `https://${network}.api.0x.org/swap/v1/tokens`
-
-    let tokens = await fetch(url)
-    tokens = await tokens.json()
-    tokens = tokens.records
-    return tokens
-  } catch (error) {
-    return []
-  }
+  const icon = symbol.toLowerCase();
+  console.log(symbol);
+  iconMap.set(symbol, `${icon}.svg`);
 }
 
 const getPancakeswapTokens = async network => {
-  const response = await fetch(`https://tokens.pancakeswap.finance/pancakeswap-top-100.json`)
-  const result = await response.json()
+  const response = await fetch(`https://tokens.pancakeswap.finance/pancakeswap-top-100.json`);
+  const result = await response.json();
   return result.tokens
-}
+};
 
 const getCoinGeckoTokens = async network => {
-  const response = await fetch(`https://tokens.pancakeswap.finance/coingecko.json`)
-  const result = await response.json()
+  const response = await fetch(`https://tokens.pancakeswap.finance/coingecko.json`);
+  const result = await response.json();
   return result.tokens
-}
-
-const getArtOnlineTokens = async network => {
-  const response = await fetch(`https://raw.githubusercontent.com/artonline/token-list/master/src/tokens/default.json`)
-  return response.json()
-}
+};
 
 const getUniswapTokens = async network => {
-  const response = await fetch(`https://raw.githubusercontent.com/Uniswap/default-token-list/master/src/tokens/${network}.json`)
+  const response = await fetch(`https://raw.githubusercontent.com/Uniswap/default-token-list/master/src/tokens/${network}.json`);
     return response.json()
-}
+};
 
 const getWapnetTokens = async network => {
   return [
@@ -89,7 +68,7 @@ const getWapnetTokens = async network => {
     address: contractAddresses[7475].cssToken,
     decimals: 18
   }]
-}
+};
 
 
 // const getCoins
@@ -100,7 +79,7 @@ const getDexTokens = async (exchange, network) => {
     if (exchange === 'coinsswap') return getWapnetTokens(network)
       // if (exchange === '0x') return get0xTokens(network)
       if (exchange === 'uniswap') {
-        const tokens = await getUniswapTokens(network)
+        const tokens = await getUniswapTokens(network);
         return tokens
       }
       if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
@@ -109,78 +88,84 @@ const getDexTokens = async (exchange, network) => {
     console.warn(error);
     return []
   }
-}
+};
 
 const getTokens = async manifest => {
-  const tokens = {}
+  const tokens = {};
 
   for (const network of Object.keys(manifest)) {
-    tokens[network] = {}
+    tokens[network] = {};
     for (const dex of Object.keys(manifest[network])) {
-      spinner.text = `fetching tokens from ${dex} for ${network}`
-      if (!spinner.isSpinning) spinner.start()
-      tokens[network][dex] = await getDexTokens(dex, network)
-      spinner.succeed(`fetching tokens from ${dex} for ${network}`)
+      spinner.text = `fetching tokens from ${dex} for ${network}`;
+      if (!spinner.isSpinning) spinner.start();
+      tokens[network][dex] = await getDexTokens(dex, network);
+      spinner.succeed(`fetching tokens from ${dex} for ${network}`);
     }
   }
   return tokens
-}
+};
 
 const tokenTask = async (manifest, token, network, dex, result) => {
 if (token.symbol === 'CON') return
-  manifest[network][dex].push(token.symbol)
+  
+          let { symbol, name, address, icon, decimals, logoURI } = token;
+          manifest[network][dex].push(token.symbol);   
 
-          let { symbol, name, address, icon, decimals, logoURI } = token
+          const iconName = symbol.toLowerCase();
+          // const thief = new ColorThief();
+          // let dominantColor;
           if (iconMap.has(symbol)) {
-            icon = iconMap.get(symbol)
+            icon = iconMap.get(symbol);
+            try {
+              const fd = await open(`build/icons/color/${iconName}.svg`);
+              fd.close();
+            } catch (error) {
+              await writeIcons(icon);  
+            }
+            // dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));            
           } else {
-            icon = logoURI ? logoURI : iconMap.get('GENERIC')
-          }
-          
-          await writeIcons(symbol, icon)
-
-          // const thief = new ColorThief()
-          // let dominantColor
-          if (!iconMap.has(symbol)) {
+            icon = logoURI ? logoURI : iconMap.get('generic');
             if(logoURI && !logoURI.includes('ipfs')) {
               try {
-                const fd = await open(`build/icons/color/${symbol}.png`)
-                await fd.close()
+                const fd = await open(`build/icons/color/${iconName}.png`);
+                await fd.close();
               } catch (error) {
                 try {
-                  await download(logoURI, 'build/icons/color', {filename: `${symbol}.png`})
-                  const buffer = await readFile(`build/icons/color/${symbol}.png`)
-                  // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${symbol}.png`))
-                  icon = `${symbol}.png`
+                  await download(logoURI, 'build/icons/color', {filename: `${iconName}.png`});
+                  // const buffer = await readFile(`build/icons/color/${symbol}.png`)
+                  // dominantColor = rgbToHex(thief.getColor(`./build/icons/color/${iconName}.png`));
+                  icon = `${iconName}.png`;
                 } catch (e) {
-                  console.warn(`nothing found for ${name}`);
+                  // if (e.statusCode === 404 || e.statusCode === 404) {
+                    icon = `generic.svg`;
+                  // }
+                  // const buffer = await readFile(`build/icons/color/generic.svg`)
+                  // dominantColor = rgbToHex(thief.getColor(buffer));
+                  console.warn(`nothing found for ${name}, falling back to generic icon`);
                 }
               }
             }
-          } else {
-            // dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`))
           }
-
-
-          // result[symbol] = { symbol, name, address, icon, decimals, dominantColor }
+          // console.log(dominantColor);
+          // result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
           result[symbol] = { symbol, name, address, icon, decimals }
 
-}
+};
 
 const dexTask = async (manifest ,tokens, dex, network) => {
-  const promises = []
+  const promises = [];
   console.log(dex);
-  const result = {}
+  const result = {};
   if (dex !== 'coinsswap' && network !== 'wapnet' || dex === 'coinsswap' && network === 'wapnet') {
     for (const token of tokens[network][dex]) {
-      promises.push(tokenTask(manifest, token, network, dex, result))
+      promises.push(tokenTask(manifest, token, network, dex, result));
     }
-    await Promise.all(promises)
-    await writeFile(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1))
+    await Promise.all(promises);
+    await writeFile(`./build/tokens/${network}/${dex}.json`, JSON.stringify(result, null, 1));
   }
-}
+};
 
-export default (async () => {
+var service = (async () => {
   const manifest = {
     mainnet: {uniswap: []},
     kovan: {uniswap: []},
@@ -188,17 +173,19 @@ export default (async () => {
     binance: {
       pancakeswap: [], coingecko: []
     }
-  }
-  const tokens = await getTokens(manifest)
+  };
+  const tokens = await getTokens(manifest);
 
-  const promises = []
+  const promises = [];
 
   for (const network of Object.keys(manifest)) {
     console.log(network);
     for (const dex of Object.keys(manifest[network])) {
-      promises.push(dexTask(manifest, tokens, dex, network))
+      promises.push(dexTask(manifest, tokens, dex, network));
     }
   }
-  await Promise.all(promises)
-  await writeFile('./build/manifest.json', JSON.stringify(manifest, null, 1))
-})()
+  await Promise.all(promises);
+  await writeFile('./build/manifest.json', JSON.stringify(manifest, null, 1));
+})();
+
+export { service as default };

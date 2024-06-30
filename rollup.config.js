@@ -2,9 +2,10 @@ import json from '@rollup/plugin-json'
 
 export default [{
   input: 'src/service.js',
+  plugins: [json],
   output: [{
-    file: 'service.js',
-    format: 'cjs'
+    dir: 'dist',
+    format: 'es'
   }]
 }, {
   input: 'src/token-list.js',

@@ -42,4 +42,4 @@ class TokenList {
   }
 }
 
-export default TokenList;
+export { TokenList as default };

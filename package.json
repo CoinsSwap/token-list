@@ -4,6 +4,7 @@
   "description": "The default token list for CoinsSwap.",
   "main": "token-list.js",
   "module": "token-list.mjs",
+  "type": "module",
   "scripts": {
     "c": "rollup -c",
     "ct": "rollup -c tokens.rollup.config.js",
@@ -30,7 +31,7 @@
   },
   "dependencies": {
     "@coinsswap/contract-address": "^0.1.8",
-    "canvas": "^2.11.2",
+    "canvas": "^3.0.0-rc2",
     "color-thief-updated": "^1.0.1",
     "cp-file": "^10.0.0",
     "cryptocurrency-icons": "^0.18.1",
