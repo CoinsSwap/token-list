@@ -111,13 +111,6 @@
   "icon": "https://tokens.pancakeswap.finance/images/0xa1faa113cbE53436Df28FF0aEe54275c13B40975.png",
   "decimals": 18
  },
- "ATA": {
-  "symbol": "ATA",
-  "name": "Automata",
-  "address": "0xA2120b9e674d3fC3875f415A7DF52e382F141225",
-  "icon": "https://tokens.pancakeswap.finance/images/0xA2120b9e674d3fC3875f415A7DF52e382F141225.png",
-  "decimals": 18
- },
  "ALU": {
   "symbol": "ALU",
   "name": "Altura",
@@ -139,6 +132,13 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc748673057861a797275CD8A068AbB95A902e8de/logo.png",
   "decimals": 9
  },
+ "ATA": {
+  "symbol": "ATA",
+  "name": "Automata",
+  "address": "0xA2120b9e674d3fC3875f415A7DF52e382F141225",
+  "icon": "https://tokens.pancakeswap.finance/images/0xA2120b9e674d3fC3875f415A7DF52e382F141225.png",
+  "decimals": 18
+ },
  "BEAR": {
   "symbol": "BEAR",
   "name": "Bear",
@@ -153,18 +153,18 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x8443f091997f06a61670B735ED92734F5628692F.png",
   "decimals": 18
  },
- "BELT": {
-  "symbol": "BELT",
-  "name": "BELT Token",
-  "address": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
-  "icon": "https://tokens.pancakeswap.finance/images/0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f.png",
-  "decimals": 18
- },
  "BIN": {
   "symbol": "BIN",
   "name": "Binemon",
   "address": "0xe56842Ed550Ff2794F010738554db45E60730371",
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xe56842Ed550Ff2794F010738554db45E60730371/logo.png",
+  "decimals": 18
+ },
+ "BELT": {
+  "symbol": "BELT",
+  "name": "BELT Token",
+  "address": "0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f",
+  "icon": "https://tokens.pancakeswap.finance/images/0xE0e514c71282b6f4e823703a39374Cf58dc3eA4f.png",
   "decimals": 18
  },
  "BMON": {
@@ -181,6 +181,13 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97/logo.png",
   "decimals": 18
  },
+ "BSCPAD": {
+  "symbol": "BSCPAD",
+  "name": "BSCPAD.com",
+  "address": "0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700",
+  "icon": "https://tokens.pancakeswap.finance/images/0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700.png",
+  "decimals": 18
+ },
  "BP": {
   "symbol": "BP",
   "name": "BunnyPark",
@@ -188,11 +195,11 @@
   "icon": "https://tokens.pancakeswap.finance/images/0xACB8f52DC63BB752a51186D1c55868ADbFfEe9C1.png",
   "decimals": 18
  },
- "BSCPAD": {
-  "symbol": "BSCPAD",
-  "name": "BSCPAD.com",
-  "address": "0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700",
-  "icon": "https://tokens.pancakeswap.finance/images/0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700.png",
+ "BTTOLD": {
+  "symbol": "BTTOLD",
+  "name": "BitTorrent Old",
+  "address": "0x8595F9dA7b868b1822194fAEd312235E43007b49",
+  "icon": "https://tokens.pancakeswap.finance/images/0x8595F9dA7b868b1822194fAEd312235E43007b49.png",
   "decimals": 18
  },
  "C98": {
@@ -209,19 +216,19 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6.png",
   "decimals": 18
  },
- "BTTOLD": {
-  "symbol": "BTTOLD",
-  "name": "BitTorrent Old",
-  "address": "0x8595F9dA7b868b1822194fAEd312235E43007b49",
-  "icon": "https://tokens.pancakeswap.finance/images/0x8595F9dA7b868b1822194fAEd312235E43007b49.png",
-  "decimals": 18
- },
  "CHR": {
   "symbol": "CHR",
   "name": "Chroma",
   "address": "0xf9CeC8d50f6c8ad3Fb6dcCEC577e05aA32B224FE",
   "icon": "https://tokens.pancakeswap.finance/images/0xf9CeC8d50f6c8ad3Fb6dcCEC577e05aA32B224FE.png",
   "decimals": 6
+ },
+ "DERC": {
+  "symbol": "DERC",
+  "name": "DeRace Token",
+  "address": "0x373E768f79c820aA441540d254dCA6d045c6d25b",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x373E768f79c820aA441540d254dCA6d045c6d25b/logo.png",
+  "decimals": 18
  },
  "CP": {
   "symbol": "CP",
@@ -237,19 +244,19 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2.png",
   "decimals": 18
  },
- "DERC": {
-  "symbol": "DERC",
-  "name": "DeRace Token",
-  "address": "0x373E768f79c820aA441540d254dCA6d045c6d25b",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x373E768f79c820aA441540d254dCA6d045c6d25b/logo.png",
-  "decimals": 18
- },
  "DPET": {
   "symbol": "DPET",
   "name": "My DeFi Pet Token",
   "address": "0xfb62AE373acA027177D1c18Ee0862817f9080d08",
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xfb62AE373acA027177D1c18Ee0862817f9080d08/logo.png",
   "decimals": 18
+ },
+ "DRS": {
+  "symbol": "DRS",
+  "name": "DragonSlayer",
+  "address": "0xc8E8ecB2A5B5d1eCFf007BF74d15A86434aA0c5C",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc8E8ecB2A5B5d1eCFf007BF74d15A86434aA0c5C/logo.png",
+  "decimals": 9
  },
  "DRACE": {
   "symbol": "DRACE",
@@ -265,20 +272,6 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x758FB037A375F17c7e195CC634D77dA4F554255B.png",
   "decimals": 18
  },
- "DRS": {
-  "symbol": "DRS",
-  "name": "DragonSlayer",
-  "address": "0xc8E8ecB2A5B5d1eCFf007BF74d15A86434aA0c5C",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc8E8ecB2A5B5d1eCFf007BF74d15A86434aA0c5C/logo.png",
-  "decimals": 9
- },
- "EPS": {
-  "symbol": "EPS",
-  "name": "Ellipsis",
-  "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
-  "icon": "https://tokens.pancakeswap.finance/images/0xA7f552078dcC247C2684336020c03648500C6d9F.png",
-  "decimals": 18
- },
  "ECC": {
   "symbol": "ECC",
   "name": "Etherconnect Coin",
@@ -291,6 +284,13 @@
   "name": "FaraCrystal",
   "address": "0xF4Ed363144981D3A65f42e7D0DC54FF9EEf559A1",
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xF4Ed363144981D3A65f42e7D0DC54FF9EEf559A1/logo.png",
+  "decimals": 18
+ },
+ "EPS": {
+  "symbol": "EPS",
+  "name": "Ellipsis",
+  "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
+  "icon": "https://tokens.pancakeswap.finance/images/0xA7f552078dcC247C2684336020c03648500C6d9F.png",
   "decimals": 18
  },
  "FLOKI": {
@@ -356,13 +356,6 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc732B6586A93b6B7CF5FeD3470808Bc74998224D/logo.png",
   "decimals": 18
  },
- "MASK": {
-  "symbol": "MASK",
-  "name": "Mask Network",
-  "address": "0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3",
-  "icon": "https://tokens.pancakeswap.finance/images/0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3.png",
-  "decimals": 18
- },
  "LINA": {
   "symbol": "LINA",
   "name": "Linear Token",
@@ -370,18 +363,11 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x762539b45A1dCcE3D36d080F74d1AED37844b878.png",
   "decimals": 18
  },
- "MINIFOOTBALL": {
-  "symbol": "MINIFOOTBALL",
-  "name": "MiniFootball",
-  "address": "0xD024Ac1195762F6F13f8CfDF3cdd2c97b33B248b",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xD024Ac1195762F6F13f8CfDF3cdd2c97b33B248b/logo.png",
-  "decimals": 9
- },
- "MND": {
-  "symbol": "MND",
-  "name": "Mound Token",
-  "address": "0x4c97c901B5147F8C1C7Ce3c5cF3eB83B44F244fE",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x4c97c901B5147F8C1C7Ce3c5cF3eB83B44F244fE/logo.png",
+ "MASK": {
+  "symbol": "MASK",
+  "name": "Mask Network",
+  "address": "0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3",
+  "icon": "https://tokens.pancakeswap.finance/images/0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3.png",
   "decimals": 18
  },
  "MBOX": {
@@ -398,6 +384,13 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x68E374F856bF25468D365E539b700b648Bf94B67/logo.png",
   "decimals": 18
  },
+ "MINIFOOTBALL": {
+  "symbol": "MINIFOOTBALL",
+  "name": "MiniFootball",
+  "address": "0xD024Ac1195762F6F13f8CfDF3cdd2c97b33B248b",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xD024Ac1195762F6F13f8CfDF3cdd2c97b33B248b/logo.png",
+  "decimals": 9
+ },
  "MONI": {
   "symbol": "MONI",
   "name": "Monsta Infinite Token",
@@ -405,11 +398,11 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x9573c88aE3e37508f87649f87c4dd5373C9F31e0/logo.png",
   "decimals": 18
  },
- "NFTB": {
-  "symbol": "NFTB",
-  "name": "NFTB",
-  "address": "0xde3dbBE30cfa9F437b293294d1fD64B26045C71A",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xde3dbBE30cfa9F437b293294d1fD64B26045C71A/logo.png",
+ "NBL": {
+  "symbol": "NBL",
+  "name": "Nobility",
+  "address": "0xA67a13c9283Da5AABB199Da54a9Cb4cD8B9b16bA",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xA67a13c9283Da5AABB199Da54a9Cb4cD8B9b16bA/logo.png",
   "decimals": 18
  },
  "NAFT": {
@@ -419,11 +412,11 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xD7730681B1DC8f6F969166B29D8A5EA8568616a3/logo.png",
   "decimals": 18
  },
- "NBL": {
-  "symbol": "NBL",
-  "name": "Nobility",
-  "address": "0xA67a13c9283Da5AABB199Da54a9Cb4cD8B9b16bA",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xA67a13c9283Da5AABB199Da54a9Cb4cD8B9b16bA/logo.png",
+ "NFTB": {
+  "symbol": "NFTB",
+  "name": "NFTB",
+  "address": "0xde3dbBE30cfa9F437b293294d1fD64B26045C71A",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xde3dbBE30cfa9F437b293294d1fD64B26045C71A/logo.png",
   "decimals": 18
  },
  "NRV": {
@@ -447,6 +440,13 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x1796ae0b0fa4862485106a0de9b654eFE301D0b2.png",
   "decimals": 18
  },
+ "POCO": {
+  "symbol": "POCO",
+  "name": "Poco Token",
+  "address": "0x394bBA8F309f3462b31238B3fd04b83F71A98848",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x394bBA8F309f3462b31238B3fd04b83F71A98848/logo.png",
+  "decimals": 18
+ },
  "POTS": {
   "symbol": "POTS",
   "name": "Moonpot",
@@ -468,25 +468,11 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xf3eDD4f14a018df4b6f02Bf1b2cF17A8120519A2/logo.png",
   "decimals": 8
  },
- "POCO": {
-  "symbol": "POCO",
-  "name": "Poco Token",
-  "address": "0x394bBA8F309f3462b31238B3fd04b83F71A98848",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x394bBA8F309f3462b31238B3fd04b83F71A98848/logo.png",
-  "decimals": 18
- },
  "QBT": {
   "symbol": "QBT",
   "name": "Qubit Token",
   "address": "0x17B7163cf1Dbd286E262ddc68b553D899B93f526",
   "icon": "https://tokens.pancakeswap.finance/images/0x17B7163cf1Dbd286E262ddc68b553D899B93f526.png",
-  "decimals": 18
- },
- "REEF": {
-  "symbol": "REEF",
-  "name": "Reef.finance",
-  "address": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
-  "icon": "https://tokens.pancakeswap.finance/images/0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e.png",
   "decimals": 18
  },
  "RACA": {
@@ -503,32 +489,11 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x8519EA49c997f50cefFa444d240fB655e89248Aa.png",
   "decimals": 18
  },
- "SFP": {
-  "symbol": "SFP",
-  "name": "SafePal Token",
-  "address": "0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb",
-  "icon": "https://tokens.pancakeswap.finance/images/0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb.png",
-  "decimals": 18
- },
- "SFUND": {
-  "symbol": "SFUND",
-  "name": "SeedifyFund",
-  "address": "0x477bC8d23c634C154061869478bce96BE6045D12",
-  "icon": "https://tokens.pancakeswap.finance/images/0x477bC8d23c634C154061869478bce96BE6045D12.png",
-  "decimals": 18
- },
- "SKILL": {
-  "symbol": "SKILL",
-  "name": "CryptoBlades Skill Token",
-  "address": "0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab",
-  "icon": "https://tokens.pancakeswap.finance/images/0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab.png",
-  "decimals": 18
- },
- "SHI": {
-  "symbol": "SHI",
-  "name": "Shirtum",
-  "address": "0x7269d98Af4aA705e0B1A5D8512FadB4d45817d5a",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x7269d98Af4aA705e0B1A5D8512FadB4d45817d5a/logo.png",
+ "REEF": {
+  "symbol": "REEF",
+  "name": "Reef.finance",
+  "address": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
+  "icon": "https://tokens.pancakeswap.finance/images/0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e.png",
   "decimals": 18
  },
  "RUSD": {
@@ -538,11 +503,46 @@
   "icon": "https://tokens.pancakeswap.finance/images/0x07663837218A003e66310a01596af4bf4e44623D.png",
   "decimals": 18
  },
+ "SFUND": {
+  "symbol": "SFUND",
+  "name": "SeedifyFund",
+  "address": "0x477bC8d23c634C154061869478bce96BE6045D12",
+  "icon": "https://tokens.pancakeswap.finance/images/0x477bC8d23c634C154061869478bce96BE6045D12.png",
+  "decimals": 18
+ },
+ "SFP": {
+  "symbol": "SFP",
+  "name": "SafePal Token",
+  "address": "0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb",
+  "icon": "https://tokens.pancakeswap.finance/images/0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb.png",
+  "decimals": 18
+ },
+ "SHI": {
+  "symbol": "SHI",
+  "name": "Shirtum",
+  "address": "0x7269d98Af4aA705e0B1A5D8512FadB4d45817d5a",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x7269d98Af4aA705e0B1A5D8512FadB4d45817d5a/logo.png",
+  "decimals": 18
+ },
+ "SKILL": {
+  "symbol": "SKILL",
+  "name": "CryptoBlades Skill Token",
+  "address": "0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab",
+  "icon": "https://tokens.pancakeswap.finance/images/0x154A9F9cbd3449AD22FDaE23044319D6eF2a1Fab.png",
+  "decimals": 18
+ },
  "SMON": {
   "symbol": "SMON",
   "name": "StarMon",
   "address": "0xAB15B79880f11cFfb58dB25eC2bc39d28c4d80d2",
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xAB15B79880f11cFfb58dB25eC2bc39d28c4d80d2/logo.png",
+  "decimals": 18
+ },
+ "SPS": {
+  "symbol": "SPS",
+  "name": "Splintershards",
+  "address": "0x1633b7157e7638C4d6593436111Bf125Ee74703F",
+  "icon": "https://tokens.pancakeswap.finance/images/0x1633b7157e7638C4d6593436111Bf125Ee74703F.png",
   "decimals": 18
  },
  "SXP": {
@@ -572,13 +572,6 @@
   "address": "0xECa41281c24451168a37211F0bc2b8645AF45092",
   "icon": "https://tokens.pancakeswap.finance/images/0xECa41281c24451168a37211F0bc2b8645AF45092.png",
   "decimals": 4
- },
- "SPS": {
-  "symbol": "SPS",
-  "name": "Splintershards",
-  "address": "0x1633b7157e7638C4d6593436111Bf125Ee74703F",
-  "icon": "https://tokens.pancakeswap.finance/images/0x1633b7157e7638C4d6593436111Bf125Ee74703F.png",
-  "decimals": 18
  },
  "TRONPAD": {
   "symbol": "TRONPAD",
@@ -615,18 +608,25 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x09a6c44c3947B69E2B45F4D51b67E6a39ACfB506/logo.png",
   "decimals": 18
  },
- "WANA": {
-  "symbol": "WANA",
-  "name": "Wanaka Farm",
-  "address": "0x339C72829AB7DD45C3C52f965E7ABe358dd8761E",
-  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x339C72829AB7DD45C3C52f965E7ABe358dd8761E/logo.png",
-  "decimals": 18
- },
  "UST": {
   "symbol": "UST",
   "name": "Wrapped UST Token",
   "address": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
   "icon": "https://tokens.pancakeswap.finance/images/0x23396cF899Ca06c4472205fC903bDB4de249D6fC.png",
+  "decimals": 18
+ },
+ "VAI": {
+  "symbol": "VAI",
+  "name": "VAI Stablecoin",
+  "address": "0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+  "icon": "https://tokens.pancakeswap.finance/images/0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7.png",
+  "decimals": 18
+ },
+ "WANA": {
+  "symbol": "WANA",
+  "name": "Wanaka Farm",
+  "address": "0x339C72829AB7DD45C3C52f965E7ABe358dd8761E",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x339C72829AB7DD45C3C52f965E7ABe358dd8761E/logo.png",
   "decimals": 18
  },
  "WIN": {
@@ -643,18 +643,18 @@
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x6b23C89196DeB721e6Fd9726E6C76E4810a464bc/logo.png",
   "decimals": 18
  },
- "VAI": {
-  "symbol": "VAI",
-  "name": "VAI Stablecoin",
-  "address": "0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
-  "icon": "https://tokens.pancakeswap.finance/images/0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7.png",
-  "decimals": 18
- },
  "YAY": {
   "symbol": "YAY",
   "name": "YAY Games",
   "address": "0x524dF384BFFB18C0C8f3f43d012011F8F9795579",
   "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x524dF384BFFB18C0C8f3f43d012011F8F9795579/logo.png",
+  "decimals": 18
+ },
+ "MND": {
+  "symbol": "MND",
+  "name": "Mound Token",
+  "address": "0x4c97c901B5147F8C1C7Ce3c5cF3eB83B44F244fE",
+  "icon": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x4c97c901B5147F8C1C7Ce3c5cF3eB83B44F244fE/logo.png",
   "decimals": 18
  },
  "PETG": {
@@ -664,17 +664,17 @@
   "icon": "generic.svg",
   "decimals": 18
  },
- "WEYU": {
-  "symbol": "WEYU",
-  "name": "WEYU",
-  "address": "0xFAfD4CB703B25CB22f43D017e7e0d75FEBc26743",
-  "icon": "generic.svg",
-  "decimals": 18
- },
  "ZIN": {
   "symbol": "ZIN",
   "name": "ZomaInfinity",
   "address": "0xFbe0b4aE6E5a200c36A341299604D5f71A5F0a48",
+  "icon": "generic.svg",
+  "decimals": 18
+ },
+ "WEYU": {
+  "symbol": "WEYU",
+  "name": "WEYU",
+  "address": "0xFAfD4CB703B25CB22f43D017e7e0d75FEBc26743",
   "icon": "generic.svg",
   "decimals": 18
  }

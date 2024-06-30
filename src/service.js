@@ -39,6 +39,12 @@ const getPancakeswapTokens = async network => {
   return result.tokens
 };
 
+const get1inchTokens = async network => {
+  const response = await fetch(`https://ipfs.io/ipns/tokens.1inch.eth/`);
+  const result = await response.json();
+  return result.tokens
+};
+
 const getCoinGeckoTokens = async network => {
   const response = await fetch(`https://tokens.pancakeswap.finance/coingecko.json`);
   const result = await response.json();
@@ -84,6 +90,8 @@ const getDexTokens = async (exchange, network) => {
       }
       if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
       if (exchange === 'coingecko') return getCoinGeckoTokens(network)
+        
+      if (exchange === '1inch') return get1inchTokens(network)
   } catch (error) {
     console.warn(error);
     return []
@@ -167,7 +175,7 @@ const dexTask = async (manifest ,tokens, dex, network) => {
 
 var service = (async () => {
   const manifest = {
-    mainnet: {uniswap: []},
+    mainnet: {uniswap: [], '1inch': []},
     kovan: {uniswap: []},
     wapnet: { coinsswap: [] },
     binance: {

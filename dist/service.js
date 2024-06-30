@@ -1,16 +1,12 @@
-import { writeFile, open, copyFile, readFile } from 'fs/promises';
+import { writeFile, open, copyFile } from 'fs/promises';
 import icons from 'cryptocurrency-icons/manifest.json' with { type: 'json' };
 import fetch from 'node-fetch';
 import ora from 'ora';
-import ColorThief from 'color-thief-updated';
+import 'color-thief-updated';
 import contractAddresses from '@coinsswap/contract-address';
 import download from 'download';
 
 const spinner = ora().start();
-
-const rgbToHex = ([r,g,b]) => {
-  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
-};
 
 const writeIcons = async (icon) => {
   const icons = {
@@ -35,6 +31,12 @@ for (const {symbol} of icons) {
 
 const getPancakeswapTokens = async network => {
   const response = await fetch(`https://tokens.pancakeswap.finance/pancakeswap-top-100.json`);
+  const result = await response.json();
+  return result.tokens
+};
+
+const get1inchTokens = async network => {
+  const response = await fetch(`https://ipfs.io/ipns/tokens.1inch.eth/`);
   const result = await response.json();
   return result.tokens
 };
@@ -84,6 +86,8 @@ const getDexTokens = async (exchange, network) => {
       }
       if (exchange === 'pancakeswap') return getPancakeswapTokens(network)
       if (exchange === 'coingecko') return getCoinGeckoTokens(network)
+        
+      if (exchange === '1inch') return get1inchTokens(network)
   } catch (error) {
     console.warn(error);
     return []
@@ -124,7 +128,7 @@ if (token.symbol === 'CON') return
             }
             // dominantColor = rgbToHex(thief.getColor(`./node_modules/cryptocurrency-icons/svg/color/${icon}`));            
           } else {
-            icon = logoURI ?? iconMap.get('generic');
+            icon = logoURI ? logoURI : iconMap.get('generic');
             if(logoURI && !logoURI.includes('ipfs')) {
               try {
                 const fd = await open(`build/icons/color/${iconName}.png`);
@@ -148,7 +152,7 @@ if (token.symbol === 'CON') return
           }
           // console.log(dominantColor);
           // result[symbol] = { symbol, name, address, icon, decimals, dominantColor };
-          result[symbol] = { symbol, name, address, icon, decimals }
+          result[symbol] = { symbol, name, address, icon, decimals };
 
 };
 
@@ -167,7 +171,7 @@ const dexTask = async (manifest ,tokens, dex, network) => {
 
 var service = (async () => {
   const manifest = {
-    mainnet: {uniswap: []},
+    mainnet: {uniswap: [], '1inch': []},
     kovan: {uniswap: []},
     wapnet: { coinsswap: [] },
     binance: {
